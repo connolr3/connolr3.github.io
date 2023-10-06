@@ -1,0 +1,227 @@
+:root {
+    --main-bg-color: #084C61;
+    --xxlarge-text-size: 2.5em;
+    --xlarge-text-size: 2.2em;
+    --large-text-size: 1.3em;
+    --normal-text-size: 2em;
+    --small-text-size: 1em;
+    --xsmall-text-size: 0.8em;
+    --font-family: 'trebuchet ms', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+hr {
+    border: 10px #b870ff solid;
+}
+
+body {
+    background-color: rgb(234, 234, 234);
+    font-family: var(--font-family);
+    position: relative;
+    top: 300px;
+    font-size: 1.6em;
+}
+
+#main {
+    margin-left: 17%;
+}
+
+h1,
+h2,
+h3,
+ul,
+ul li,
+h4 {
+    text-align: left;
+    font-size: 1em;
+    font-family: var(--font-family);
+}
+
+p,
+a {
+    font-size: var(--normal-text-size);
+    font-family: var(--font-family);
+}
+
+.maintitle {
+    height: 100%;
+    margin: 2%;
+    font-size: var(--small-text-size);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.details {
+    font-size: var(--normal-text-size);
+}
+
+h2 {
+    color: #12947b;
+    font-size: 3.4em;
+}
+
+.logo {
+    width: 30%;
+    height: 30%;
+    float: left;
+}
+
+ul {
+    text-decoration: none;
+    margin: 1em;
+    font-size: 1em;
+    padding-inline-start: 0;
+}
+
+ul li {
+    text-decoration: none;
+    margin: 1em;
+    font-size: var(--normal-text-size);
+}
+
+.author {
+    text-align: right;
+    font-style: italic;
+    font-size: 2.5em;
+}
+
+.quote {
+    text-align: center;
+}
+
+h3 {
+    padding: 0, 100px;
+    font-size: 2.6em;
+    font-weight: bold;
+}
+
+h4 {
+    padding: 0, 100px;
+    font-size: var(--normal-text-size);
+    font-weight: bold;
+}
+
+.greentext {
+    color: #12947b;
+    display: inline;
+}
+
+.purpletext {
+    color: #b870ff;
+    display: inline;
+}
+
+.maintitle h1 {
+    font-size: 4.4em;
+    font-family: 'Lucida Console', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.numbertag {
+    color: #b870ff;
+    font-size: 4.5em;
+    font-weight: bold;
+}
+
+.details h2 {
+    text-align: right;
+    color: black;
+    font-size: 1.3em;
+}
+
+
+/* Navbar container */
+
+.topbar {
+    background-color: rgb(242, 244, 245);
+    border-right: #12947b 18px solid;
+    font-family: Arial;
+    position: fixed;
+    color: darkgrey;
+    width: 100%;
+    height: 10%;
+    left: 0;
+    top: 0;
+    font-size: 4em;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    color: black;
+    border-bottom: #12947b 18px solid;
+}
+
+.topbar a {
+    font-size: 1.6em;
+    margin: 0 4%;
+    border: 1px black;
+    text-decoration: none;
+    color: black;
+}
+
+.navbar {
+    background-color: rgb(94, 95, 96);
+    font-family: Arial;
+    position: fixed;
+    color: white;
+    width: 15%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    font-size: 1.6em;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    text-align: center;
+}
+
+
+/* Links inside the navbar */
+
+.navbar ul,
+.navbar ul li,
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    list-style: none;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+
+/* Add a red background color to navbar links on hover */
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+    background-color: #b870ff;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+
+/* Dropdown content (hidden by default) */
+
+.artpiece {
+    width: 90%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.logo {
+    width: 30%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.poem p {
+    font-size: var(--normal-text-size);
+    font-family: var(--font-family);
+}
+
+.poem {
+    background-color: #f9f1ff;
+    /*border: #12947b 3px solid;*/
+    width: fit-content;
+    border-radius: 15px;
+    padding: 7%;
+}
