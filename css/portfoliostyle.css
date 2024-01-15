@@ -66,6 +66,8 @@
 
 a {
     text-decoration: none;
+    color: #823038;
+    font-weight: 600;
 }
 
 body {
@@ -210,7 +212,6 @@ p {
     object-fit: contain;
     height: 100%;
     top: 0;
-    border-radius: 5% 5% 0 0;
 }
 
 h1 .vertical,
@@ -436,15 +437,8 @@ li {
 
 .project_container_row {
     position: relative;
-    width: 490px;
-    height: 340px;
-}
-
-.row .project_cover_img {
-    width: 490px;
-    height: 340px;
-    object-fit: cover;
-    /* border-radius: 3%;*/
+    width: 250px;
+    height: 200px;
 }
 
 .project_container_row_sm {
@@ -466,13 +460,20 @@ li {
     font-size: 3rem;
 }
 
+.row .project_cover_img {
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    /* border-radius: 3%;*/
+}
+
 .project_cover_text {
     position: absolute;
     bottom: -10px;
     right: 0px;
     text-align: right;
     color: #044f4f;
-    font-size: 1rem;
+    font-size: 0.8rem;
     background-color: #d4dcd9;
 }
 
@@ -499,41 +500,4 @@ li {
 .date {
     font-size: 0.8rem;
     margin-bottom: 0;
-}
-
-
-/*
-
-PHOTOS
-
-*/
-
-
-/*-------------------------------------------------PAINTINGS - PHOTOGRAPHY -----------------------------------------------------*/
-
-
-/*create columns and rows for the painting-photo gallery*/
-
-.photo-row {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
-}
-
-.photo-column {
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 4px;
-}
-
-.photo-column img {
-    margin-top: 8px;
-    vertical-align: middle;
-    width: 100%;
-}
-
-.photo-container h2 {
-    margin: 2%;
-    color: var(--light-feature-color3);
-    font: 1.7em sofiapro, sans-serif;
 }
