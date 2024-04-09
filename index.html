@@ -4,6 +4,7 @@
 
 <head>
     <!--specify encoding-->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <meta charset="UTF-8">
 
     <!--this is a doc mode that allows web authors to choose what version of internet explorer the page should be rendered as-->
@@ -22,8 +23,7 @@
 
 
 
-    <!--link to css-->
-    <link rel="stylesheet" href="css/slideshow.css">
+
 
     <!--link to js-->
     <script src="js/slideshow.js"></script>
@@ -43,7 +43,7 @@ usually displayed in tabs.-->
 </head>
 
 <body>
-    <header>
+    <!-- <header>
         <div class="nav_container">
             <a href="index.html" class="nav_item nav_active nav1">HOME</a>
             <a href="projects.html" class="nav_item nav2">PROJECTS</a>
@@ -51,14 +51,28 @@ usually displayed in tabs.-->
             <a href="photos.html" class="nav_item nav5">PHOTOS</a>
             <a href="contact.html" class="nav_item nav3">CONTACT</a>
         </div>
-    </header>
+    </header>-->
+
+
+    <!--Navigation bar-->
+    <div id="nav-placeholder">
+
+    </div>
+
+    <script>
+        $(function() {
+            $("#nav-placeholder").load("nav.html");
+        });
+    </script>
+    <!--end of Navigation bar-->
 
     <div class="flexcontainer">
         <div class="halfcontainer">
             <div class="coll"></div>
             <div class="coll"></div>
             <div>
-                <img src="img/IMG_5422.JPG" class="coverimage">
+                <!--<img src="img/IMG_5422.JPG" class="coverimage">-->
+                <img src="img/final4.png" class="coverimage">
             </div>
 
             <div class="overlay-text">
@@ -76,9 +90,12 @@ usually displayed in tabs.-->
             <div class="roww">
                 <h2>WELCOME</h2>
                 <p>I am a PhD student at Trinity College Dublin. My area of research is proxemics and human behaviour in the Metaverse. This position is sponsored by the <a href="https://d-real.ie/">SFI Centre for Research Training in Digitally-Enhanced Reality (d-real)</a></p>
-                <p><b>Background: </b>I completed my masters degree in interactive digital media at Trinity College Dublin! My undergraduate degree is in Management Science & Information Systems Studies (MSISS). This is my portfolio site so it is constantly
+                <!--
+ <p><b>Background: </b>I completed my masters degree in interactive digital media at Trinity College Dublin! My undergraduate degree is in Management Science & Information Systems Studies (MSISS). This is my portfolio site so it is constantly
                     being updated (I hope) with my work.
                 </p>
+
+             -->
                 <p><b>Academic Interests: </b>I have a very broad range of academic interests but some of the mains ones are: AR/VR, Web dev, 3D Modelling & Animation, programming, accessiblity, neurodiversity (brains in general), accessibility and inclusion.
                 </p>
                 <p>Take a look around and send me an email if you want to say hi! I love hearing peoples thoughts and feedback.</p>
@@ -151,20 +168,18 @@ usually displayed in tabs.-->
     </div>
 
 
-    <!-- FOOTER -->
-    <div class="site-footer">
-        <div class="socials">
-            <a><i class='bx bxl-youtube'></i></a>
-            <a><i class='bx bxl-linkedin-square' ></i></a>
-            <a><i class='bx bxl-github' ></i></a>
-        </div>
 
-        <!-- Copyright -->
-        <div class="copyright">
-            <p>&#169; IDM All Right Reserved<span class="separator">|</span><a href="accessibility.html">Accessibility Policy</a></p>
-        </div>
+    <!--Footer bar-->
+    <div id="footer-placeholder">
+
     </div>
 
+    <script>
+        $(function() {
+            $("#footer-placeholder").load("footer.html");
+        });
+    </script>
+    <!--end of Footer bar-->
 
 
 

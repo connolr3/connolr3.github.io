@@ -218,6 +218,85 @@ p {
     border-radius: 5% 5% 0 0;
 }
 
+html {
+    font-size: 16px;
+}
+
+
+/* Media query for screens smaller than 600px */
+
+
+/* Responsive styles */
+
+@media screen and (max-width:1000px) {
+    .photo-row {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 4px;
+    }
+    .body {
+        background-color: red;
+    }
+    .photo-column {
+        flex: 33%;
+        max-width: 33%;
+        padding: 0 4px;
+    }
+    .photo-column img {
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 100%;
+    }
+    .photo-container h2 {
+        margin: 2%;
+        margin-left: 10%;
+        color: var(--light-feature-color3);
+        font: 1.7em sofiapro, sans-serif;
+    }
+}
+
+@media screen and (max-width: 868px) {
+    html {
+        font-size: 18px;
+    }
+    .photo-container {
+        margin: 2%;
+        padding-left: 8%;
+    }
+    body {
+        max-width: 93%;
+    }
+    .flexcontainer {
+        flex-direction: column;
+    }
+    .nav_container_container {
+        width: 100%;
+    }
+    .nav_container {
+        width: 100%;
+    }
+    .coverimage {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .flex-halfcontainer {
+        width: 100%;
+    }
+    .halfcontainer,
+    .midcontainer {
+        height: 100%;
+    }
+    .halfcontainer,
+    .midcontainer {
+        width: 50%;
+    }
+    .coverimage {
+        width: 100%;
+    }
+}
+
 h1 .vertical,
 .vertical {
     color: #cdd4cd;
@@ -412,6 +491,7 @@ h2 {
     margin-top: 1.5rem;
     margin-bottom: 0.5rem;
     font-size: 1.3rem;
+    text-transform: uppercase;
 }
 
 .tag {
