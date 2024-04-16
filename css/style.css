@@ -69,7 +69,12 @@
 }
 
 .col2 {
-    min-width: fit-content
+    min-width: fit-content;
+    border-left: dashed 1.5rem #ffffff;
+}
+
+.vertical-rl {
+    border-right: dashed 1.5rem #aab5aa;
 }
 
 .col1 {
@@ -641,8 +646,16 @@ a:hover {
 
 .nav_item:hover {
     color: var(--light-feature-color3);
+    color: #5a2961 !important;
+    font-weight: 700;
+    text-decoration: dashed underline;
+    text-underline-offset: 18px;
     transition: 0.3s all linear;
     transform: scale(1.1);
+}
+
+.nav_item a:hover {
+    color: #5a2961 !important;
 }
 
 .nav_item:visited {
