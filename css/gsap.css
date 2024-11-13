@@ -1,0 +1,472 @@
+/*variables:  visual identity/branding colors*/
+
+:root {
+    --body-color: rgb(241, 241, 241);
+    --feature-color1: #A1659A;
+    --feature-color2: #039281;
+    --feature-color3: #F46554;
+    /*#F95738*/
+    --text-color: black;
+}
+
+.pre-footer {
+    height: 20%;
+}
+
+.background-colour {
+    background-color: var(--body-color);
+}
+
+body {
+    color: var(--text-color);
+    background-color: var(--body-color);
+}
+
+
+/* * means apply those styles to all elements*/
+
+* {
+    /*  font-family: "bahnschrift", sans-serif;*/
+    font-family: "bahnschrift";
+    margin: 0;
+    padding: 0;
+    color: black;
+    scroll-behavior: smooth;
+    /*Smooth: scrolls in a smooth fashion using a user-agent-defined timing function over a user-agent-defined period of time. */
+    box-sizing: border-box;
+    /*If you set box-sizing: border-box; on an element, padding and border are included in the width and height:*/
+    scroll-padding-top: 2rem;
+}
+
+.page {
+    width: 100%;
+    height: 100%;
+    min-width: 100%;
+    z-index: -1000;
+}
+
+.first-panel {
+    padding-top: 5%;
+    background-color: none;
+}
+
+
+/*
+.panel {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 100vh;
+    max-height: 100vh;
+    min-width: 100vh;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 5% 0 5%;
+}*/
+
+.textfeature1 {
+    color: var(--feature-color1);
+}
+
+.textfeature2 {
+    color: var(--feature-color2);
+}
+
+.textfeature3 {
+    color: var(--feature-color3);
+}
+
+.panelcol {
+    max-width: 65%;
+    min-height: 70%;
+}
+
+.panelcolimage {
+    width: 40%;
+    text-align: left;
+}
+
+.coverimage {
+    position: relative;
+    left: 0;
+    object-fit: contain;
+    max-height: 90%;
+    max-width: 80%;
+    top: 0;
+    margin: auto;
+    border-radius: 10%;
+    border: 23px white solid;
+}
+
+img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.largeimage {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.bottom-justified {
+    justify-content: end;
+    align-items: end;
+}
+
+.center-justified {
+    align-content: center;
+    justify-content: center;
+}
+
+.flexcol {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    row-gap: 3em;
+    height: 100%;
+    width: 100%;
+}
+
+.row {
+    height: fit-content;
+}
+
+.smallerh1 {
+    font-size: 3.5em;
+}
+
+.right-aligned {
+    text-align: right;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 3em;
+}
+
+h3 {
+    font-size: 1.3em;
+    text-transform: uppercase;
+    margin: 10px 0 10px 0;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.2;
+}
+
+.narrow-message {
+    max-width: 60%;
+}
+
+
+/* width 
+
+::-webkit-scrollbar {
+    width: 20px;
+}*/
+
+
+/* Track 
+ ::-webkit-scrollbar-track {
+    background-color: var(--feature-color2);
+}*/
+
+
+/* Handle
+
+ ::-webkit-scrollbar-thumb {
+    background: var(--text-color);
+} */
+
+
+/*Nav Bar*/
+
+.nav_container_container {
+    background-color: var(--light-feature-color2) !important;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    align-items: center;
+    padding-bottom: 1rem;
+    width: 100%;
+    z-index: 1000000;
+}
+
+.nav_container {
+    display: flex;
+    background-color: none;
+    color: inherit;
+    align-items: center;
+    padding-top: 01rem;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    flex-direction: row;
+    z-index: 1000000;
+}
+
+.links {
+    display: flex;
+    background-color: none;
+    color: inherit;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 40%;
+    z-index: 1000000;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.socials {
+    width: 10%;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    background-color: none;
+    justify-content: center;
+    color: inherit;
+    align-items: center;
+    font-size: 3em;
+    right: 0;
+}
+
+.nav_active {
+    color: var(--light-feature-color1) !important;
+    font-weight: 700;
+}
+
+.nav_item,
+a {
+    text-decoration: none;
+    font-weight: 1000;
+}
+
+.nav_item:hover {
+    color: var(--light-feature-color3);
+    transition: 0.3s all linear;
+    transform: scale(1.1);
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+    font-size: 3em;
+}
+
+.buttons button {
+    border: none;
+    font-size: 0.5em;
+    background-color: var(--feature-color2);
+    padding: 0.3em;
+    border-radius: 5%;
+}
+
+.gallery {
+    margin: 2em;
+}
+
+.transparent-cover {
+    background-color: #00000084;
+    position: fixed;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    opacity: 0;
+    height: 100vh;
+    z-index: 50;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.cover {
+    left: 0%;
+    top: 0%;
+    position: relative;
+    width: 50%;
+    background-color: inherit;
+}
+
+.box,
+.box2 {
+    display: block;
+    font-size: 2.4em;
+    color: black;
+}
+
+.comparisonSection {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* to maintain aspect ratio (responsive!) */
+}
+
+.comparisonImage {
+    width: 100%;
+    height: 100%;
+}
+
+.afterImage {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    transform: translate(100%, 0px);
+}
+
+.afterImage img {
+    transform: translate(-100%, 0px);
+}
+
+.comparisonImage img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.panel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+}
+
+.cover-vid {
+    width: 60vh;
+    height: 60vh;
+    object-fit: cover;
+    border-radius: 100%;
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+    right: -300px;
+    transform: translateY(-50%);
+}
+
+.circular-img {
+    width: 60vh;
+    height: 60vh;
+    object-fit: cover;
+    border-radius: 100%;
+    position: relative;
+    top: 0%;
+}
+
+.top {
+    width: 110vh;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+    line-height: 0.8;
+    font-size: 5.2em;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.tree-spine {
+    position: absolute;
+    left: 5%;
+    top: 80vh;
+    width: 4px;
+    height: 5000px;
+    background-color: #333;
+    /* Dark color for the spine */
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+.branch {
+    position: absolute;
+    width: 30vw;
+    height: 3px;
+    border: #000000 dashed 3px;
+    opacity: 0;
+    transform-origin: left center;
+    will-change: transform, opacity;
+}
+
+
+/* Position and angle each branch */
+
+.branch1 {
+    top: 60vh;
+    transform: rotate(1deg) translateX(100px);
+    right: 50%;
+}
+
+.branch2 {
+    top: 1000vh;
+    transform: rotate(1deg) translateX(-100px);
+}
+
+.branch3 {
+    top: 180vh;
+    width: 40vh;
+    transform: rotate(1deg) translateX(100px);
+}
+
+.branch4 {
+    top: 200vh;
+    transform: rotate(1deg) translateX(-100px);
+}
+
+
+/* Add a transition to help the branches move in/out smoothly */
+
+.branch {
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+
+/*.panel {
+    width: 100%;
+    height: 100%;
+    z-index: -100;
+    position: absolute;
+    left: 0;
+}
+
+.yellow {
+    background-color: #f4e754;
+    top: 100%;
+}
+
+.green {
+    background-color: rgb(147, 205, 156);
+    top: 200%;
+}
+*/
+
+.container {
+    display: flex;
+    height: 100vh;
+    width: 200vw;
+    /* Width to accommodate two panels side-by-side */
+}
+
+.panel {
+    flex: 0 0 100vw;
+    /* Each panel takes full viewport width */
+    height: 100vh;
+}
+
+.yellow {
+    background-color: rgba(183, 183, 183, 0.571);
+}
+
+.green {
+    background-color: rgba(255, 255, 255, 0.548);
+}
+
+.blue {
+    background-color: blueviolet
+}
