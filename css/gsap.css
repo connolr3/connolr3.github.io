@@ -1,16 +1,35 @@
 /*variables:  visual identity/branding colors*/
 
 :root {
-    --body-color: rgb(241, 241, 241);
+    --body-color: black;
     --feature-color1: #A1659A;
     --feature-color2: #039281;
     --feature-color3: #F46554;
     /*#F95738*/
-    --text-color: black;
+    --text-color: rgb(241, 241, 241);
+    ;
 }
 
 .pre-footer {
     height: 20%;
+}
+
+.video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 95vh;
+    object-fit: cover;
+    z-index: -100000;
+}
+
+.corner {
+    z-index: -100;
+    width: 15%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
 
 .background-colour {
@@ -30,7 +49,7 @@ body {
     font-family: "bahnschrift";
     margin: 0;
     padding: 0;
-    color: black;
+    color: var(--text-color);
     scroll-behavior: smooth;
     /*Smooth: scrolls in a smooth fashion using a user-agent-defined timing function over a user-agent-defined period of time. */
     box-sizing: border-box;
@@ -76,26 +95,40 @@ body {
     color: var(--feature-color3);
 }
 
-.panelcol {
+.cover-flex {
     max-width: 65%;
-    min-height: 70%;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-20vw, -20vh);
+    max-height: 50%;
+    z-index: 100;
+    left: 40vw;
+    top: 45vh;
+    column-gap: 3%;
 }
 
 .panelcolimage {
-    width: 40%;
+    width: 10%;
     text-align: left;
+}
+
+.col {
+    width: fit-content;
 }
 
 .coverimage {
     position: relative;
-    left: 0;
+    right: 0;
     object-fit: contain;
-    max-height: 90%;
-    max-width: 80%;
+    max-height: 40%;
+    max-width: 100%;
     top: 0;
     margin: auto;
-    border-radius: 10%;
-    border: 23px white solid;
+    border-radius: 100%;
 }
 
 img {
@@ -185,7 +218,7 @@ p {
 
 .nav_container_container {
     background-color: var(--light-feature-color2) !important;
-    color: white;
+    color: var(--text-color);
     text-decoration: none;
     font-weight: bold;
     align-items: center;
@@ -199,7 +232,7 @@ p {
     background-color: none;
     color: inherit;
     align-items: center;
-    padding-top: 01rem;
+    padding-top: 0rem;
     justify-content: space-between;
     width: 100%;
     position: absolute;
@@ -210,7 +243,7 @@ p {
 .links {
     display: flex;
     background-color: none;
-    color: inherit;
+    color: var(--text-color);
     align-items: center;
     justify-content: space-between;
     min-width: 40%;
@@ -220,7 +253,7 @@ p {
 }
 
 .socials {
-    width: 10%;
+    width: 15%;
     padding-left: 30px;
     padding-right: 30px;
     display: flex;
@@ -232,6 +265,10 @@ p {
     right: 0;
 }
 
+.socials img {
+    height: 40px;
+}
+
 .nav_active {
     color: var(--light-feature-color1) !important;
     font-weight: 700;
@@ -241,6 +278,7 @@ p {
 a {
     text-decoration: none;
     font-weight: 1000;
+    color: var(--text-color);
 }
 
 .nav_item:hover {
@@ -360,7 +398,7 @@ body {
 .top {
     width: 110vh;
     position: absolute;
-    top: 30px;
+    top: 64px;
     right: 30px;
 }
 
@@ -429,24 +467,22 @@ h1 {
 }
 
 
-/*.panel {
+/*
+.panel {
     width: 100%;
     height: 100%;
     z-index: -100;
     position: absolute;
     left: 0;
-}
+}*/
 
 .yellow {
-    background-color: #f4e754;
-    top: 100%;
+    background-color: #ddd89f;
 }
 
 .green {
     background-color: rgb(147, 205, 156);
-    top: 200%;
 }
-*/
 
 .container {
     display: flex;
@@ -481,8 +517,8 @@ h1 {
     height: 50vh;
     left: 25%;
     top: 0;
-    border-left: 3px black solid;
-    border-bottom: 3px black solid;
+    border-left: 3px var(--text-color) solid;
+    border-bottom: 3px var(--text-color) solid;
     position: absolute;
     transform: translateX(-9px);
     border-radius: 0 0 0 3em / 3em;
@@ -492,7 +528,7 @@ h1 {
     width: 100vw;
     height: 50vh;
     top: 0%;
-    border-bottom: 3px black solid;
+    border-bottom: 3px var(--text-color) solid;
     position: absolute;
 }
 
@@ -503,11 +539,11 @@ h1 {
     top: 25vh;
     left: 50%;
     position: relative;
-    background-color: black;
+    background-color: var(--text-color);
 }
 
 .circle {
-    background-color: black;
+    background-color: var(--text-color);
     width: 10vh;
     height: 10vh;
     transform: translate(-3vw, 2.5vw);
@@ -521,13 +557,13 @@ h1 {
 .horizontal {
     width: 40vw;
     height: 3px;
-    background-color: black;
+    background-color: var(--text-color);
 }
 
 .leftline {
     width: 90vw;
-    border-left: 3px solid black;
-    border-bottom: 3px solid black;
+    border-left: 3px solid var(--text-color);
+    border-bottom: 3px solid var(--text-color);
     height: 100vh;
     top: 0vh;
     left: 5%;
@@ -538,8 +574,8 @@ h1 {
 
 .rightline {
     width: 90vw;
-    border-right: 3px solid black;
-    border-bottom: 3px solid black;
+    border-right: 3px solid var(--text-color);
+    border-bottom: 3px solid var(--text-color);
     height: 100vh;
     top: 0vh;
     right: 5%;

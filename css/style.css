@@ -75,6 +75,10 @@ body {
     min-height: 70%;
 }
 
+.col {
+    width: 50%;
+}
+
 .panelcolimage {
     width: 40%;
     text-align: left;
