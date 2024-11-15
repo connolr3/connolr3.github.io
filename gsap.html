@@ -35,7 +35,7 @@
 
 <body>
     <!--link to js-->
-    <script src="js/gsap-animation.js"></script>
+    <script src="./js/gsap-animation.js"></script>
     <!-- 
     <div id="nav-placeholder">
 
@@ -99,23 +99,8 @@
 
     </div>
     <div class="box3">
-        <h1>PROJECTS</h1>
-    </div>
-    <br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br>
-    <div class="trigger">
-
 
     </div>
-    <div class="box3">
-        <h1>CONTACT</h1>
-    </div>
-    <br><br><br><br><br><br><br><br>
-
-
-    <br><br><br><br><br><br><br><br>
     <br><br><br><br><br><br><br><br>
 
     <!-- <div class="tree-spine">
@@ -131,19 +116,53 @@
          Add more branches as needed 
     
     </div>-->
-    <div class="container">
-        <div class="panel yellow" style="display: flex; justify-content: center; flex-direction: column;">
-            <h1>About Me</h1>
-            <img src="img/IMG_5422 copy.JPG" class="circular-img">
+    <div class="panel">
+        <div class="circle "></div>
+        <div class="middle-vertical-spine ">
+            <div class="trigger">
+
+
+            </div>
+            <div class="box3">
+                <h1>CONTACT</h1>
+            </div>
+        </div>
+    </div>
+    <div class="container ">
+        <div class="panel yellow " style="display: flex; justify-content: center; flex-direction: column; ">
+            <div class="circle" style="top: 10vh;"></div>
+            <h1 class="trigger-appear"></h1>
+            <div class="appear">
+                <h1>About Me</h1>
+                <div class="horizontal">
+                    <br>
+                    <p style="background-color: white;">
+                        I am a PhD student at Trinity College Dublin. My area of research is proxemics and human behaviour in the Metaverse. This position is sponsored by the SFI Centre for Research Training in Digitally-Enhanced Reality (d-real). I have a very broad range of
+                        academic interests but some of the mains ones are: AR/VR, Web dev, 3D Modelling & Animation, programming, accessiblity, neurodiversity (brains in general), accessibility and inclusion.
+                    </p>
+                    <p>Take a look around and send me an email if you want to say hi! I love hearing peoples thoughts and feedback.</p>
+                    <p>connolr3@tcd.ie</p>
+                </div>
+            </div>
+
+            <img src="img/IMG_5422 copy.JPG " class="circular-img ">
+            <div class="middle-top-left-spine "></div>
         </div>
 
-        <div class="panel green">
-            <h1>RECENT PROJECTS</h1>
-            <H2>LOST IN THE RETROVERSE</H2>
+        <div class="panel green ">
+            <div class="middle-horizontal-spine ">
+                <img src="img/rendr.jpg" class="circular-img">
+                <div class="circle"></div>
+                <h1>RECENT PROJECTS</h1>
+                <H2>LOST IN THE RETROVERSE</H2>
+                <p>As seen at: @RenderFest @BetaFest @EuropeanResearchersNight @IDMshowcase @TCDOpenDay</p>
+                <H2>AI DISCOVERY GALLERY</H2>
+                <p>see all projects</p>
 
+            </div>
         </div>
 
-        <div class="panel blue">Panel 3 (Scrolls Vertically)</div>
+        <div class="panel blue ">Panel 3 (Scrolls Vertically)</div>
 
     </div>
 
@@ -162,10 +181,10 @@
                     x: 0,
                     scrollTrigger: {
                         trigger: branch,
-                        start: "top 80%", // When branch enters viewport
-                        end: "top 20%", // When branch starts to exit viewport
+                        start: "top 80% ", // When branch enters viewport
+                        end: "top 20% ", // When branch starts to exit viewport
                         scrub: 1, // Smooth scrubbing
-                        toggleActions: "play reverse play reverse", // Toggle actions
+                        toggleActions: "play reverse play reverse ", // Toggle actions
                     }
                 }
             );

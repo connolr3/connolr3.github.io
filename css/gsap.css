@@ -327,12 +327,14 @@ body {
     top: 0;
 }
 
+
+/*
 .panel {
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 90vh;
-}
+}*/
 
 .cover-vid {
     width: 60vh;
@@ -455,18 +457,95 @@ h1 {
 
 .panel {
     flex: 0 0 100vw;
-    /* Each panel takes full viewport width */
+    height: 100vh;
+}
+
+.static-panel {
     height: 100vh;
 }
 
 .yellow {
-    background-color: rgba(183, 183, 183, 0.571);
+    background-color: var(--body-color)
 }
 
 .green {
-    background-color: rgba(255, 255, 255, 0.548);
+    background-color: var(--body-color)
 }
 
 .blue {
     background-color: blueviolet
+}
+
+.middle-top-left-spine {
+    width: 50vw;
+    height: 50vh;
+    left: 25%;
+    top: 0;
+    border-left: 3px black solid;
+    border-bottom: 3px black solid;
+    position: absolute;
+    transform: translateX(-9px);
+    border-radius: 0 0 0 3em / 3em;
+}
+
+.middle-horizontal-spine {
+    width: 100vw;
+    height: 50vh;
+    top: 0%;
+    border-bottom: 3px black solid;
+    position: absolute;
+}
+
+.middle-vertical-spine {
+    width: 3px;
+    height: 75vh;
+    bottom: 0;
+    top: 25vh;
+    left: 50%;
+    position: relative;
+    background-color: black;
+}
+
+.circle {
+    background-color: black;
+    width: 10vh;
+    height: 10vh;
+    transform: translate(-3vw, 2.5vw);
+    ;
+    left: 50vw;
+    top: 25vh;
+    position: relative;
+    border-radius: 100%;
+}
+
+.horizontal {
+    width: 40vw;
+    height: 3px;
+    background-color: black;
+}
+
+.leftline {
+    width: 90vw;
+    border-left: 3px solid black;
+    border-bottom: 3px solid black;
+    height: 100vh;
+    top: 0vh;
+    left: 5%;
+    position: relative;
+    background-color: inherit;
+    border-radius: 0 0 0 3em / 3em;
+}
+
+.rightline {
+    width: 90vw;
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
+    height: 100vh;
+    top: 0vh;
+    right: 5%;
+    left: 5%;
+    position: relative;
+    background-color: inherit;
+    background-color: white;
+    border-radius: 0 0 3em / 3em 0;
 }

@@ -14,6 +14,20 @@ document.addEventListener('DOMContentLoaded', () => {
         duration: 7
     });
 
+
+    gsap.to('.appear', {
+        scrollTrigger: {
+            trigger: '.trigger-appear',
+            start: 'bottom center', // start when .trigger reaches the center of the viewport
+            end: 'bottom top', // end when .trigger leaves the top of the viewport
+            toggleActions: 'play reverse play reverse', // play forwards on enter, reverse on leave
+            markers: true // remove this line if you don’t want to see debugging markers
+        },
+        x: 100,
+        duration: 1
+    });
+
+
     // Initial animation when the page loads
     gsap.fromTo(".box", { x: 0 }, // Start position (shifted to the left)
         { x: 100, duration: 7, yoyo: true, repeat: 1 } // Shift right, then back left
