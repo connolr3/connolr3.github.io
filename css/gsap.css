@@ -18,17 +18,17 @@
     position: absolute;
     left: 0;
     top: 0;
-    width: 100vw;
-    height: 95vh;
+    width: 200vw;
+    height: 200vh;
     object-fit: cover;
     z-index: -100000;
 }
 
 .corner {
-    z-index: -100;
-    width: 15%;
+    z-index: 100000000000000000000000;
+    width: 10.5%;
     position: absolute;
-    right: 0;
+    right: 0vw;
     bottom: 0;
 }
 
@@ -99,35 +99,30 @@ body {
     max-width: 65%;
     width: fit-content;
     display: flex;
-    flex-direction: row;
     position: absolute;
     justify-content: center;
     align-items: center;
-    transform: translate(-20vw, -20vh);
-    max-height: 50%;
+    transform: translate(-27.5vw, -25vh);
+    max-height: 50vh;
     z-index: 100;
     left: 40vw;
-    top: 45vh;
+    top: 55vh;
     column-gap: 3%;
-}
-
-.panelcolimage {
-    width: 10%;
-    text-align: left;
 }
 
 .col {
     width: fit-content;
+    height: 30vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .coverimage {
-    position: relative;
-    right: 0;
     object-fit: contain;
-    max-height: 40%;
-    max-width: 100%;
-    top: 0;
-    margin: auto;
+    max-height: 90%;
+    max-width: 90%;
+    z-index: 105;
     border-radius: 100%;
 }
 
@@ -160,8 +155,38 @@ img {
     width: 100%;
 }
 
-.row {
-    height: fit-content;
+.internal-cover-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.top-item {
+    display: flex;
+    align-items: flex-end;
+    /* Align content to the bottom edge of the top item */
+    justify-content: center;
+    height: 50%;
+    /* Ensure the bottom of this item aligns with the center */
+    /* For demonstration */
+    width: 100%;
+    /* Optional: Match parent width */
+    padding-bottom: 10px;
+}
+
+.bottom-item {
+    display: flex;
+    align-items: flex-start;
+    padding-top: 10px;
+    /* Align content to the top edge of the bottom item */
+    justify-content: center;
+    height: 50%;
+    /* Ensure the top of this item aligns with the center */
+    /* For demonstration */
+    width: 100%;
+    /* Optional: Match parent width */
 }
 
 .smallerh1 {
@@ -235,7 +260,7 @@ p {
     padding-top: 0rem;
     justify-content: space-between;
     width: 100%;
-    position: absolute;
+    position: relative;
     flex-direction: row;
     z-index: 1000000;
 }
@@ -266,7 +291,7 @@ p {
 }
 
 .socials img {
-    height: 40px;
+    height: 75px;
 }
 
 .nav_active {
@@ -325,7 +350,6 @@ body {
     left: 0%;
     top: 0%;
     position: relative;
-    width: 50%;
     background-color: inherit;
 }
 
@@ -375,8 +399,8 @@ body {
 }*/
 
 .cover-vid {
-    width: 60vh;
-    height: 60vh;
+    width: 130vh;
+    height: 90vh;
     object-fit: cover;
     border-radius: 100%;
     overflow: hidden;
@@ -477,17 +501,47 @@ h1 {
 }*/
 
 .yellow {
-    background-color: #ddd89f;
+    background-color: none;
 }
 
 .green {
     background-color: rgb(147, 205, 156);
 }
 
+.blue {
+    background: rgb(153, 153, 179);
+}
+
+.white {
+    background: rgb(253, 253, 255);
+}
+
+.red {
+    background: red;
+}
+
+.purple {
+    background: none;
+}
+
 .container {
     display: flex;
     height: 100vh;
     width: 200vw;
+    /* Width to accommodate two panels side-by-side */
+}
+
+.container-50,
+.container-backwards-50 {
+    display: flex;
+    height: 100vh;
+    width: 200vw;
+    /* Width to accommodate two panels side-by-side */
+}
+
+.container-backwards-50 {
+    left: -100vw;
+    background-color: none;
     /* Width to accommodate two panels side-by-side */
 }
 
@@ -498,14 +552,6 @@ h1 {
 
 .static-panel {
     height: 100vh;
-}
-
-.yellow {
-    background-color: var(--body-color)
-}
-
-.green {
-    background-color: var(--body-color)
 }
 
 .blue {
@@ -522,6 +568,142 @@ h1 {
     position: absolute;
     transform: translateX(-9px);
     border-radius: 0 0 0 3em / 3em;
+}
+
+
+/*----------------PROJECTS----------------------------*/
+
+.bottom-project-item {
+    border-left: whi 3p t
+}
+
+.projectcoverimage {
+    max-width: 15vw;
+    height: 100%;
+    /* Fit tightly around the image */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.projectimage {
+    object-fit: cover;
+    height: 100%;
+    /* Ensures it’s always a square */
+    max-width: 100%;
+    max-height: 15vw;
+    z-index: 105;
+    border-radius: 100%;
+    position: relative;
+    /* Required for pseudo-element positioning */
+    aspect-ratio: 1 / 1;
+}
+
+.projectcoverimage::after {
+    content: '';
+    position: absolute;
+    /* Center vertically relative to the container */
+    left: 50%;
+    /* Adjust to center the origin point */
+    width: 50%;
+    height: 100%;
+    /* Thickness of the white line */
+    /* Extend the line to the middle of the viewport */
+    /* Make the line visible */
+    z-index: 10;
+    /* Ensure the line is below other content */
+    /*Thickness of the border */
+    border-left: 3px solid;
+    /* Set the thickness of the border */
+    border-image: linear-gradient(to bottom, transparent 50%, white 50%) 1 100%;
+}
+
+.project-col {
+    display: flex;
+    align-items: center;
+    height: 45vh;
+    justify-content: center;
+    width: fit-content;
+    column-gap: 10px;
+}
+
+.internal-project-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    height: 100%;
+}
+
+.projects {
+    display: flex;
+    max-height: 100%;
+    max-width: 95vw;
+    bottom: 50vh;
+    column-gap: 3vw;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    left: 100vw;
+    bottom: 50vh;
+}
+
+.projects-bottom {
+    display: flex;
+    max-height: 45vh;
+    max-width: 65vw;
+    top: 55vh;
+    column-gap: 3vw;
+    flex-direction: row;
+    align-items: baseline;
+    position: absolute;
+    left: 100vw;
+    bottom: 50vh;
+}
+
+.project-flex {
+    min-width: 20vw;
+    min-height: 100%;
+    height: fit-content;
+    width: fit-content;
+    max-width: 45vw;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.bottom-spine {
+    width: 150vw;
+    height: 50vh;
+    left: 25vw;
+    bottom: 0;
+    border-right: 3px var(--text-color) solid;
+    border-top: 3px var(--text-color) solid;
+    background-color: none;
+    z-index: 50;
+    position: absolute;
+    transform: translate(-9px, -3px);
+    border-radius: 3em 3em 0em 3em;
+}
+
+.top-spine {
+    width: 150vw;
+    height: 30vh;
+    right: 25vw;
+    top: 0;
+    background-color: none;
+    border-right: 3px var(--text-color) solid;
+    border-bottom: 3px var(--text-color) solid;
+    background-color: none;
+    z-index: 50;
+    position: absolute;
+    transform: translateX(-9px);
+    border-radius: 0em 0em 3em 0em;
 }
 
 .middle-horizontal-spine {
@@ -542,22 +724,40 @@ h1 {
     background-color: var(--text-color);
 }
 
+.tag {
+    background-color: #03928165;
+    width: fit-content;
+    margin: 3px;
+    display: inline-block;
+}
+
 .circle {
     background-color: var(--text-color);
     width: 10vh;
     height: 10vh;
-    transform: translate(-3vw, 2.5vw);
-    ;
-    left: 50vw;
-    top: 25vh;
-    position: relative;
+    transform: translate(-2.5vw, 2.5vw);
+    top: 45vh;
+    left: 100vw;
+    position: absolute;
+    border-radius: 100%;
+}
+
+.circle-4 {
+    background-color: var(--text-color);
+    width: 10vh;
+    height: 10vh;
+    transform: translate(-2.5vw, -2.5vw);
+    left: 25vw;
+    top: 30vh;
+    z-index: 100000000000000;
+    position: absolute;
     border-radius: 100%;
 }
 
 .horizontal {
     width: 40vw;
     height: 3px;
-    background-color: var(--text-color);
+    background-color: pink;
 }
 
 .leftline {
