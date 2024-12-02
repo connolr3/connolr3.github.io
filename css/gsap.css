@@ -19,7 +19,7 @@
     left: 0;
     top: 0;
     width: 200vw;
-    height: 200vh;
+    height: 100vh;
     object-fit: cover;
     z-index: -100000;
 }
@@ -106,7 +106,7 @@ body {
     max-height: 50vh;
     z-index: 100;
     left: 40vw;
-    top: 55vh;
+    top: 50vh;
     column-gap: 3%;
 }
 
@@ -600,7 +600,7 @@ h1 {
     aspect-ratio: 1 / 1;
 }
 
-.projectcoverimage::after {
+.projectspinetop::after {
     content: '';
     position: absolute;
     /* Center vertically relative to the container */
@@ -619,10 +619,29 @@ h1 {
     border-image: linear-gradient(to bottom, transparent 50%, white 50%) 1 100%;
 }
 
+.projectspinebottom::after {
+    content: '';
+    position: absolute;
+    /* Center vertically relative to the container */
+    left: 50%;
+    /* Adjust to center the origin point */
+    width: 50%;
+    height: 100%;
+    /* Thickness of the white line */
+    /* Extend the line to the middle of the viewport */
+    /* Make the line visible */
+    z-index: 10;
+    /* Ensure the line is below other content */
+    /*Thickness of the border */
+    border-left: 3px solid;
+    /* Set the thickness of the border */
+    border-image: linear-gradient(to top, transparent 50%, white 50%) 1 100%;
+}
+
 .project-col {
     display: flex;
     align-items: center;
-    height: 45vh;
+    height: 50vh;
     justify-content: center;
     width: fit-content;
     column-gap: 10px;
@@ -647,19 +666,20 @@ h1 {
     position: absolute;
     left: 100vw;
     bottom: 50vh;
+    background-color: #00000094;
+    border: 10%;
 }
 
 .projects-bottom {
     display: flex;
     max-height: 45vh;
     max-width: 65vw;
-    top: 55vh;
+    top: 50vh;
     column-gap: 3vw;
     flex-direction: row;
     align-items: baseline;
     position: absolute;
-    left: 100vw;
-    bottom: 50vh;
+    left: 120vw;
 }
 
 .project-flex {
@@ -675,6 +695,10 @@ h1 {
     justify-content: center;
     align-items: center;
     z-index: 100;
+}
+
+.bottom {
+    bottom: 0;
 }
 
 .bottom-spine {
@@ -721,7 +745,7 @@ h1 {
     top: 25vh;
     left: 50%;
     position: relative;
-    background-color: var(--text-color);
+    background-color: aquamarine;
 }
 
 .tag {
@@ -784,4 +808,8 @@ h1 {
     background-color: inherit;
     background-color: white;
     border-radius: 0 0 3em / 3em 0;
+}
+
+.list {
+    max-width: 15vw;
 }
