@@ -578,13 +578,14 @@ h1 {
 }
 
 .projectcoverimage {
-    max-width: 15vw;
+    max-width: 12vw;
     height: 100%;
     /* Fit tightly around the image */
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
+   
 }
 
 .projectimage {
@@ -592,9 +593,10 @@ h1 {
     height: 100%;
     /* Ensures it’s always a square */
     max-width: 100%;
-    max-height: 15vw;
+    max-height: 12vw;
     z-index: 105;
     border-radius: 100%;
+    border: white 10px solid;
     position: relative;
     /* Required for pseudo-element positioning */
     aspect-ratio: 1 / 1;
@@ -635,13 +637,14 @@ h1 {
     /*Thickness of the border */
     border-left: 3px solid;
     /* Set the thickness of the border */
-    border-image: linear-gradient(to top, transparent 50%, white 50%) 1 100%;
+    border-image: linear-gradient(to top, transparent 75%, white 25%) 1 100%;
 }
 
 .project-col {
     display: flex;
     align-items: center;
-    height: 50vh;
+    height: 40vh;
+   
     justify-content: center;
     width: fit-content;
     column-gap: 10px;
@@ -657,17 +660,36 @@ h1 {
 
 .projects {
     display: flex;
-    max-height: 100%;
     max-width: 95vw;
     bottom: 50vh;
     column-gap: 3vw;
     flex-direction: row;
     align-items: center;
     position: absolute;
-    left: 100vw;
+    left: 105vw;
     bottom: 50vh;
-    background-color: #00000094;
+    border-left: white solid 3px;
     border: 10%;
+}
+
+.projects-title{
+    position: absolute;
+    left:105vw;
+    transform: translate(4%,50%);
+    top: 5vh;
+}
+
+
+
+.circle-anchor{
+    width: 3vw;
+    height: 3vw;
+    border-radius: 100%;
+    background-color: white;
+    position: relative;
+    transform: translate(-100%,-100%);
+    left:0;
+    top: 0;
 }
 
 .projects-bottom {
@@ -687,7 +709,7 @@ h1 {
     min-height: 100%;
     height: fit-content;
     width: fit-content;
-    max-width: 45vw;
+    max-width: 40vw;
     display: flex;
     flex-direction: row;
     position: relative;
@@ -811,5 +833,5 @@ h1 {
 }
 
 .list {
-    max-width: 15vw;
+    max-width: 25vw;
 }
