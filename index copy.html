@@ -4,6 +4,7 @@
 
 <head>
     <!--specify encoding-->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <meta charset="UTF-8">
 
     <!--this is a doc mode that allows web authors to choose what version of internet explorer the page should be rendered as-->
@@ -15,146 +16,408 @@
     <!--initial scale determines the initial zoom when page is first loaded-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Rosie Connolly</title>
+    <title>Home | Rosie</title>
 
     <!--link to css-->
-    <link rel="stylesheet" href="css/portfoliostyle.css">
-
-
+    <link rel="stylesheet" href="css/gsap.css">
 
     <!--link to css-->
-    <link rel="stylesheet" href="css/slideshow.css">
+    <link rel="stylesheet" href="css/responsivestyling.css">
 
-    <!--link to js-->
-    <script src="js/slideshow.js"></script>
-
-
-    <!--fav icon: 
-A favicon is a graphic image (icon) associated with a particular Web page and/or Web site. 
-usually displayed in tabs.-->
-
-    <!--IE9 AND 10 require a type attribute be specifed,  In these versions, 
-    although the need to define the rel attribute as shortcut icon was removed, 
-    they instead added a need to specify the media type as image/x-icon.-->
-    <link rel="shortcut icon" href="img/logo_white.png" type="image/x-icon">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ysabeau">
     <!--box icons:https://boxicons.com/ -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/ScrollTrigger.min.js"></script>
 </head>
 
 <body>
-    <header>
-        <div class="nav_container">
-            <a href="index.html" class="nav_item nav_active nav1">HOME</a>
-            <a href="projects.html" class="nav_item nav2">PROJECTS</a>
-            <a href="timeline.html" class="nav_item nav3">TIMELINE</a>
-            <a href="interests.html" class="nav_item nav5">INTERESTS</a>
-            <a href="contact.html" class="nav_item nav3">CONTACT</a>
-        </div>
-    </header>
 
-    <div class="flexcontainer">
-        <div class="halfcontainer">
-            <div class="coll"></div>
-            <div class="coll"></div>
-            <div>
-                <img src="img/IMG_5422.JPG" class="coverimage">
-            </div>
 
-            <div class="overlay-text">
-                <h1>Rosie <br>Connolly</h1>
+    <div class="container-50">
+        <img src="img/web-designs/2.png" style="left: 80vw;bottom:-10vw; position: absolute;">
 
-            </div>
+        <div class="panel cover">
+            <div class="nav_container ">
 
-        </div>
-        <div class="midcontainer">
-            <h1 class="vertical">
-                PORTFOLIO
-            </h1>
-        </div>
-        <div class="flex-halfcontainer">
-            <div class="roww">
-                <h2>WELCOME</h2>
-                <p>I am a PhD student at Trinity College Dublin. My area of research is proxemics and human behaviour in the Metaverse. This position is sponsored by the <a href="https://d-real.ie/">SFI Centre for Research Training in Digitally-Enhanced Reality (d-real)</a></p>
-                <p>I completed my masters degree in interactive digital media at Trinity College Dublin! My undergraduate degree is in Management Science & Information Systems Studies (MSISS). This is my portfolio site so it is constantly being updated (I
-                    hope) with my work.
-                </p>
-                <p>I have a very broad range of academic interests but some of the mains ones are: AR/VR, Web dev, 3D Modelling & Animation, programming, accessiblity, neurodiversity (brains in general), accessibility and inclusion.
-                </p>
-                <p>Take a look around and send me an email if you want to say hi! I love hearing peoples thoughts and feedback.</p>
-                <br>
-                <b>connolr3@tcd.ie</b>
+                <div class="socials ">
+                    <img src="img/ROSE.IE PROFILE.png " style="border-radius: 100%; ">
+                    <a href="https://www.youtube.com/@rose.ie-portfolio "><i class='bx bxl-youtube'></i></a>
+                    <a href="https://www.linkedin.com/in/rosieconnolly/ "><i class='bx bxl-linkedin-square' ></i></a>
+                    <a href="https://github.com/connolr3 "><i class='bx bxl-github' ></i></a>
+
+                </div>
+                <div class="links ">
+                    <a href="#home " class="nav_item nav_active nav1 ">HOME</a>
+                    <a href="#recent-projects " class="nav_item nav3 ">PROJECTS</a>
+                    <a href="#recent-projects " class="nav_item nav3 ">EDUCATION</a>
+                    <a href="#test" class="nav_item nav3 ">PUBLICATIONS</a>
+
+
+                    <a href="#contact " class="nav_item nav3 ">CONTACT</a>
+
+                </div>
+
 
             </div>
-            <!--
-                  <div class="roww">
-                <div class="minigallery">
-                    <img class="minigallery-pic" src="img/mini1.png">
-                    <img class="minigallery-pic" src="img/mini2.png">
-                    <img class="minigallery-pic" src="img/mini3.png">
+            <video class="video" loop controls autoplay muted>
+                <source src="img/1.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+              </video>
+
+            <div class="corner">
+                <img src="img/final4.png">
+            </div>
+
+            <div class="cover-flex">
+                <div class="col" style="width: 70%;">
+
+                    <img src="img/IMG_5422 copy.JPG" class="coverimage breathe ">
+
+
+                </div>
+                <div class="col ">
+                    <div class="internal-cover-flex">
+                        <div class=" top-item">
+                            <h1 id="home">ROSIE CONNOLLY</h1>
+                        </div>
+
+                        <div class=" narrow-message bottom-item">
+                            <p>
+                                Welcome to my portfolio! I’m a VR researcher interested in all forms of creative technology.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            -->
+        </div>
+
+        <div class="panel yellow " style="display: flex; justify-content: left; flex-direction: row; ">
+            <img src="img/web-designs/1.png" style="right: 10vw; position: absolute; max-width: 20vw;">
+
+
+            <H2>RECENT PROJECTS</H2>
+            <div class="projects">
+                <div class="project">
+                    <div class="project-flex">
+                        <div class="project-col" style="width: 70%;">
+
+                            <div class="projectcoverimage  projectspinetop">
+                                <img src="img/retroverse.JPG" class="projectimage breathe">
+                            </div>
+
+
+                        </div>
+                        <div class="project-col ">
+                            <div class="internal-project-flex">
+                                <div class=" top-project-item">
+                                    <h3>RETROVERSE</h3>
+                                </div>
+
+
+                                <div class="bottom-project-item">
+
+                                    <p>
+                                        Welcome to my portfolio! I’m a VR researcher interested in all forms of creative technology.
+                                    </p>
+
+                                    <p class="tag">VR</p>
+                                    <p class="tag">Design</p>
+
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="project">
+                    <div class="project-flex">
+                        <div class="project-col" style="width: 70%;">
+                            <div class="projectcoverimage  projectspinetop">
+                                <img src="img/ai.discovery.gallery.png" class="projectimage breathe">
+                            </div>
+
+                        </div>
+                        <div class="project-col ">
+                            <div class="internal-project-flex">
+                                <div class=" top-project-item">
+                                    <h3>AI DISCOVERY<br>GALLERY</h3>
+                                </div>
+
+
+                                <div class="bottom-project-item">
+
+                                    <p>
+                                        Welcome to my portfolio! I’m a VR researcher interested in all forms of creative technology.
+                                    </p>
+                                    <p class="tag">Video</p>
+                                    <p class="tag">VR</p>
+                                    <p class="tag">Video</p>
+                                    <p class="tag">VR</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="projects-bottom">
+                <div class="project-bottom">
+                    <div class="project">
+                        <div class="project-flex">
+
+                            <div class="project-col ">
+                                <div class="internal-project-flex">
+                                    <div class=" top-project-item">
+                                        <h3>EMBODIED CONVERSATIONAL AGENTS</h3>
+                                    </div>
+
+
+                                    <div class="bottom-project-item">
+
+                                        <p>
+                                            Welcome to my portfolio! I’m a VR researcher interested in all forms of creative technology.
+                                        </p>
+                                        <p class="tag">Video</p>
+                                        <p class="tag">VR</p>
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="project-col" style="width: 70%;">
+                                <div class="projectcoverimage  projectspinebottom">
+                                    <img class="video projectimage breathe" src="gif/eca-unscreen.gif">
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="bottom-spine"></div>
+        </div>
+    </div>
+
+
+    <div class="container-backwards-50" id="1">
+        <video class="video" loop controls autoplay muted>
+            <source src="img/1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
+        <div class="top-spine"></div>
+
+        <div class="panel yellow">
+            <div class="circle-4">
+
+            </div>
+            <h1>CONTACT</h1>
+            <div class="projects" style="left: 30vw;">
+                <div class="project" style="min-width: 60vw;">
+                    <div class="project-flex">
+                        <div class="project-col" style="width: 70%;">
+
+                            <div class="projectcoverimage  projectspinetop">
+                                <img src="img/retroverse.JPG" class="projectimage breathe">
+                            </div>
+
+
+                        </div>
+                        <div class="project-col ">
+                            <div class="internal-project-flex">
+                                <div class=" top-project-item">
+                                    <h3>EXPERIENCE</h3>
+                                </div>
+
+
+                                <div class="bottom-project-item">
+
+                                    <div class="EXP">
+                                        <H3>CS Intern @ Salesforce</H3>
+                                        <h4>Software Engineering, Netowrk Securty Team</h4>
+                                        <H3>Research Intern @ TCD Careers</H3>
+                                        <h4>Disability Inclusion & Employability</h4>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <div class="projects-bottom" style="left: 30vw;">
+                <div class="project-bottom">
+                    <div class="project">
+                        <div class="project-flex">
+
+                            <div class="project-col ">
+                                <div class="internal-project-flex">
+                                    <div class=" top-project-item">
+                                        <h3>Education</h3>
+                                    </div>
+
+
+                                    <div class="bottom-project-item">
+
+                                        <H3>MsC in Interactive Digital Media</H3>
+                                        <h4>Trinity College Dublin</h4>
+                                        <H3>BsC in Management Science & Information Systems Studies</H3>
+                                        <h4>Trinity College Dublin</h4>
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="project-col" style="width: 70%;">
+                                <div class="projectcoverimage  projectspinebottom">
+                                    <img class="video projectimage breathe" src="gif/eca-unscreen.gif">
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
 
         </div>
 
 
-    </div>
+        <div class="panel yellow">
+            <H2>UPCOMING</H2>
+            <img src="img/web-designs/3.png" style="right: 50vw; bottom: 30vh; position: absolute; max-width: 20vw;">
+            <img src="img/mini2.png">
+            <img src="img/artblob.png" style="right: 0; bottom:0; position: absolute; max-width: 40vw; max-height: 40vh;  rotate: 180deg">
+            <div class="projects">
+                <div class="project">
+                    <div class="project-flex">
+                        <div class="project-col" style="width: 70%;">
+
+                            <div class="projectcoverimage  projectspinetop">
+                                <img src="img/tcd2.png" class="projectimage breathe">
+                            </div>
 
 
-
-    <div class="container">
-        <h2>Current Projects</h2>
-        <h3>Into the Retroverse: A VR Experience</h3>
-        <p>Summer Project @idm 2023. An interactive, immersive comic book about a modern day greek heroine experienced through virtual reality.Watch this space for more information</p>
-
-        <h3>“Neurodivergent Gaming: A Review, Discussion and Proposed Research Design” (Master's Thesis)</h3>
-        <P><b>Abstract</b> </P>
-
-
-        <p>In 2021 Spiel and Gerling conducted an impressive literature review calling out researchers for the lack of research into the enjoyment of games for neurodivergent populations. They found that the bulk of research is conducted from a medical standpoint,
-            for reasons relating to therapy, diagnosis, or education. This paper extends their research up to 2023. Much of their findings still hold true. Researchers still take a corrective approach - fixing the perceived deficits of disabilities. However
-            small shifts were observed towards the ideals of neurodiversity. Games are more adaptable to users’ needs and new used-focused design methods are being utilised. This success was hindered slightly by COVID-19 which caused participant recruitment
-            difficulties and a tendency towards single player games. Another slight shift is observed in language around disability. Spiel and Gerling found much of the research conducted before 2021 used deficit focused language. This paper finds a slight
-            shift towards more social and individual language. Yet many papers still use outdated language and hold perspectives on disability not held by much of the disabled population themselves. The concept of neurodiversity is still under-utilised
-            and there is much room for improvement.</p>
-        <p>Following this review, it is clear games are very rarely researched for the context of fun when it comes to neurodiverse users. Yet the primary use of games is fun. Improving the enjoyment of gaming is extremely well researched for the general
-            neurotypical population so why not for the neurodiverse population too? Thus, this paper makes some initial steps into investigating and improving the ‘fun’ of games for neurodiverse populations. Following the literature review some areas
-            are deduced to be under-researched. The paper discusses eight of these areas - features of ‘neurodivergent gaming’ - purely in the context of fun. These areas include preferred game genres, most enjoyable gameplay features and neurodiverse
-            representation in games. Insights are considered from the neurodivergent community through public forums. A research survey is designed to further investigate these areas.</p>
-        <p>This paper presents the necessary groundwork for future research to be conducted into neurodivergent gaming. It highlights gaps in the current research and presents new areas of interest to explore using a designed survey.</p>
+                        </div>
+                        <div class="project-col ">
+                            <div class="internal-project-flex">
+                                <div class=" top-project-item">
+                                    <h3>THE IMPACT OF LOCOMOTION ON PROXMITY</h3>
+                                    <H4>Upccoming @ IEEEVR TVCG 2025</H4>
+                                </div>
 
 
+                                <div class="bottom-project-item">
+
+                                    <p>
+                                        The impact of navigaation on proximity in immersive environemnts with embodied agents.
+                                    </p>
+
+                                    <p class="tag">VR</p>
+                                    <p class="tag">Research</p>
 
 
+                                </div>
+                            </div>
 
 
+                        </div>
+                    </div>
+
+                </div>
 
 
+            </div>
+
+            <div class="projects-bottom">
+                <div class="project">
+                    <div class="project-flex">
+                        <div class="project-col" style="width: 70%; background-color: none;">
+                            <div class="projectcoverimage  big projectspinebottom">
+                                <div class="sketchfab-embed-wrapper"> <iframe title="Kart" class="projectimage kart breathe" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport
+                                        execution-while-not-rendered web-share src="https://sketchfab.com/models/cc22b1e92a6f4d8aa6ea4b985b8e9533/embed?ui_theme=dark"> </iframe>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-col ">
+                            <div class="internal-project-flex">
+                                <div class=" top-project-item">
+                                    <h3>Interests</h3>
+                                </div>
 
 
+                                <div class="bottom-project-item">
 
-    </div>
+                                    <p>
+                                        Art & Design:<br> 2D, 3D, digital & real!
+                                        <br>Exampled around site!
+                                    </p>
+                                    <p class="tag">Design</p>
 
-    <div class="container" style="margin-top: 2rem;">
-        <p><b>Last Updated: </b>May 2023</p>
-    </div>
+                                </div>
+                            </div>
 
 
-    <!-- FOOTER -->
-    <div class="site-footer">
-        <div class="socials">
-            <a><i class='bx bxl-youtube'></i></a>
-            <a><i class='bx bxl-linkedin-square' ></i></a>
-            <a><i class='bx bxl-github' ></i></a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
         </div>
 
-        <!-- Copyright -->
-        <div class="copyright">
-            <p>&#169; IDM All Right Reserved<span class="separator">|</span><a href="accessibility.html">Accessibility Policy</a></p>
+
+        <div class="panel blue">
+            <h1>CONTACT</h1>
+            <div class="socials ">
+                <img src="img/ROSE.IE PROFILE.png " style="border-radius: 100%; ">
+                <a href="https://www.youtube.com/@rose.ie-portfolio "><i class='bx bxl-youtube'></i></a>
+                <a href="https://www.linkedin.com/in/rosieconnolly/ "><i class='bx bxl-linkedin-square' ></i></a>
+                <a href="https://github.com/connolr3 "><i class='bx bxl-github' ></i></a>
+
+            </div>
         </div>
+
     </div>
 
+
+
+
+
+
+
+
+
+
+
+
+    <!--link to js-->
+    <script src="./js/gsap-animation.js"></script>
 
 
 
