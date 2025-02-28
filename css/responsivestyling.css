@@ -1,0 +1,54 @@
+@media only screen and (max-width: 1000px) {
+    body {
+        background-color: lightblue;
+    }
+    * {
+        color: pink;
+    }
+    .links {
+        display: none;
+    }
+    .cover-flex {
+        max-width: 90vw;
+        flex-direction: column;
+        min-height: 50vh;
+        margin: none;
+        padding: none;
+    }
+    .spine-top {
+        height: 200vh;
+        width: 5vw;
+        right: 0;
+        border-left: white solid 3px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container,
+    .container-50,
+    .container-backwards-50 {
+        width: 200vw;
+        display: flex;
+        flex-direction: column;
+        /*    overflow-y: scroll;
+         Use 100% of the viewport width on smaller screens */
+    }
+    .panel {
+        width: 100vw;
+        height: 100vh;
+    }
+    .bottom-spine {
+        width: 20vw;
+        height: 180vh;
+        right: 20vw;
+        bottom: 0;
+        border-left: 3px var(--text-color) solid;
+        border-top: 3px var(--text-color) solid;
+        background-color: none;
+        z-index: 50;
+        position: absolute;
+        transform: translate(-9px, -3px);
+        border-radius: 3em 3em 0em 3em;
+        display: none;
+    }
+}

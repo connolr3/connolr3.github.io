@@ -147,3 +147,7 @@ $(document).ready(function() {
              backgroundColor: "AF9050"
          })*/
 });
+
+window.addEventListener("resize", () => {
+    ScrollTrigger.refresh();
+});
