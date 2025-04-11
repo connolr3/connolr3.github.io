@@ -207,9 +207,10 @@ h2 {
     font-size: 3em;
 }
 
+
 h3 {
     font-size: 1.3em;
-    text-transform: uppercase;
+ /*   text-transform: uppercase;*/
     margin: 10px 0 10px 0;
 }
 
@@ -264,6 +265,7 @@ p {
     padding-top: 0rem;
     justify-content: space-between;
     width: 100%;
+
     position: relative;
     flex-direction: row;
     z-index: 1000000;
@@ -275,10 +277,10 @@ p {
     color: var(--text-color);
     align-items: center;
     justify-content: space-between;
-    min-width: 40%;
+    min-width: 30%;
     z-index: 1000000;
     padding-left: 30px;
-    padding-right: 30px;
+    padding-right: 50px;
 }
 
 .socials {
@@ -597,6 +599,21 @@ h1 {
     justify-content: center;
 }
 
+.whitecircle{
+    background-color: white;
+    border-radius: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5vh;
+    height: 5vh;
+    z-index: 100000000000000;
+    position: absolute;
+    border-radius: 100%;
+}
+
+
 .projectimage {
     object-fit: cover;
     height: 100%;
@@ -680,6 +697,8 @@ h1 {
     border: 10%;
 }
 
+
+
 .projects-title {
     position: absolute;
     left: 105vw;
@@ -710,8 +729,34 @@ h1 {
     left: 120vw;
 }
 
+.credits {
+    display: flex;
+    max-width: 95vw;
+    bottom: 50vh;
+    column-gap: 3vw;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    right: 105vw;
+    bottom: 50vh;
+    border-left: white solid 3px;
+    border: 10%;
+}
+
+.credits-bottom {
+    display: flex;
+    max-height: 45vh;
+    max-width: 65vw;
+    top: 50vh;
+    column-gap: 3vw;
+    flex-direction: row;
+    align-items: baseline;
+    position: absolute;
+    right: 120vw;
+}
+
 .project-flex {
-    min-width: 20vw;
+    min-width: 40vw;
     min-height: 100%;
     height: fit-content;
     width: fit-content;
