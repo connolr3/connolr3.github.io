@@ -7,6 +7,9 @@
     left: 10vw;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:center;
     height: fit-content;
     padding: 2vw;
     border-radius: 1em;
@@ -39,21 +42,56 @@
     flex-wrap: wrap;
     border-radius: 1em;
     justify-content: space-evenly;
-    background-color: #0000008e;
+ 
 }
 
 .project-div{
-    max-width: 50%;
     align-items: center;
     display: flex;
     flex-direction: column;
-padding-bottom: 3em;
-row-gap: 1em;
+padding: 1em;
+margin: 1EM;
+background-color: #0000008e;
+height: fit-content;
+width: fit-content;
+border-radius: 3%;
+}
+
+.project-div img{
+    max-height: 60vh;
+    max-width: 50vw !important;
+}
+
+.horizontal-flex{
+display: flex;
+flex-direction: row;
+column-gap: 1em;
+}
+
+.horizontal-flex img{
+max-width: 30vw !important;
+object-fit: contain;
+flex-wrap: wrap;
+    }
+
+
+    .kartproject{
+        min-width: 40vw;
+        min-height: 20vw;
+        object-fit: contain;
+    }
+.project-div:hover{
+
+color: var(--light-feature-color3);
+transition: 0.3s all linear;
+transform: scale(1.05);
+background-color: #000000d1;
+
 }
 
 .main img{
     max-width: 90%;
-    max-height: 20vw;
+    max-height: 20rgba(0, 0, 0, 0.822)
     object-fit: cover;
     border-radius: 1%;
 }
