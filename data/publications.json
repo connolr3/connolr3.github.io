@@ -1,0 +1,30 @@
+[
+  {
+    "id": "connolly2025impact",
+    "type": "article",
+    "title": "The Impact of Navigation on Proxemics in an Immersive Virtual Environment with Conversational Agents",
+    "authors": ["Rose Connolly", "Lauren Buck", "Victor Zordan", "Rachel McDonnell"],
+    "abstract":"As social VR grows in popularity, understanding how to optimise interactions becomes increasingly important. Interpersonal distance–the physical space people maintain between each other–is a key aspect of user experience. Previous work in psychology has shown that breaches of personal space cause stress and discomfort. Thus, effectively managing this distance is crucial in social VR, where social interactions are frequent. Teleportation, a commonly used locomotion method in these environments, involves distinct cognitive processes and requires users to rely on their ability to estimate distance. Despite its widespread use, the effect of teleportation on proximity remains unexplored. To investigate this, we measured the interpersonal distance of 70 participants during interactions with embodied conversational agents, comparing teleportation to natural walking. Our findings revealed that participants maintained closer proximity from the agents during teleportation. Female participants kept greater distances from the agents than male participants, and natural walking was associated with higher agency and body ownership, though co-presence remained unchanged. We propose that differences in spatial perception and spatial cognitive load contribute to reduced interpersonal distance with teleportation. These findings emphasise that proximity should be a key consideration when selecting locomotion methods in social VR, highlighting the need for further research on how locomotion impacts spatial perception and social dynamics in virtual environments.",
+    "journal": "IEEE Transactions on Visualization and Computer Graphics",
+    "year": 2025,
+    "publisher": "IEEE"
+  },
+  {
+    "id": "doe2024vrstudy",
+    "type": "conference",
+    "title": "A Study on VR Interaction Dynamics",
+    "authors": ["Jane Doe", "John Smith"],
+    "conference": "ACM Symposium on Virtual Reality Software and Technology",
+    "year": 2024,
+    "publisher": "ACM"
+  },
+    {
+    "id": "vargas2025audio",
+    "type": "conference",
+    "title": "Immersive Vocal Practice: Audio-Visual Evaluation of an Acoustic Virtual Environment for Vocal Rehearsal and Performance",
+    "authors": [" Flores-Vargas", "Rose Connolly","Enda Bates","Rachel McDonnell"],
+    "abstract": "Acoustic features of musical venues and theatres, such as early reflections and late reverberation, have been shown to influence self-perception of one’s voice, thus affecting adaptation in vocal production and musical performance. Immersive technology and the 3D representation of architectural spaces, such as digital twins and Immersive Virtual Environments (IVEs), are an effective medium for training in diverse fields. However, audio-visual IVEs could also enable real-time vocal auralisation for singers and stage actors, supporting musical performance and practice in Extended Reality (XR) and the metaverse. To investigate this, ten professional singers with over 5 years of professional music experience evaluated the usability and audio-visual plausibility of a VR-based virtual theatre. The environment was created using an audio-visual capture of a real theatre, allowing participants to sing and explore the stage acoustically and visually, with real-time first-person vocal auralisation based on Spatial Impulse Responses (SIRs) and visual rendering using Gaussian Splatting (GS). Our results revealed that participants felt present in the space, acknowledging the realism of the multimodal rendering. They recognised the potential of real-time vocal auralisation in IVE as a tool for practice and rehearsal, providing a realistic and plausible representation of performance venues. These findings suggest that high-fidelity audio-visual IVEs may support performers in vocal practice, understanding the spatial distribution and acoustics of real venues, and addressing other performance-related factors such as performance anxiety.",
+    "year": 2025,
+    "publisher": "ACM"
+  }
+]

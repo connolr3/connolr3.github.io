@@ -1,4 +1,4 @@
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 600px) {
     body {
         background-color: lightblue;
     }
@@ -10,10 +10,29 @@
     }
     .cover-flex {
         max-width: 90vw;
+         min-width: 70vw;
         flex-direction: column;
-        min-height: 50vh;
         margin: none;
         padding: none;
+        min-height: 90VH;
+        left: 50vw;
+        top: 50VH;
+            transform: translate(-30vw, -45vh);
+           align-items: flex-start;
+           justify-content: center;
+
+    }
+    .narrow-message{
+width: 90vw;
+    }
+    .corner{
+        display: none;
+    }
+
+    .col{
+        align-items: flex-start;
+        justify-content: flex-start;
+        min-height: 30vh;
     }
     .spine-top {
         height: 200vh;
@@ -21,34 +40,28 @@
         right: 0;
         border-left: white solid 3px;
     }
+    .container-50,
+.container-backwards-50 {
+    display: flex;
+    height: 200vh;
+    width: 100vw;
+    /* Width to accommodate two panels side-by-side */
 }
 
-@media screen and (max-width: 768px) {
-    .container,
-    .container-50,
-    .container-backwards-50 {
-        width: 200vw;
-        display: flex;
-        flex-direction: column;
-        /*    overflow-y: scroll;
-         Use 100% of the viewport width on smaller screens */
-    }
-    .panel {
-        width: 100vw;
-        height: 100vh;
-    }
-    .bottom-spine {
-        width: 20vw;
-        height: 180vh;
-        right: 20vw;
-        bottom: 0;
-        border-left: 3px var(--text-color) solid;
-        border-top: 3px var(--text-color) solid;
-        background-color: none;
-        z-index: 50;
-        position: absolute;
-        transform: translate(-9px, -3px);
-        border-radius: 3em 3em 0em 3em;
-        display: none;
-    }
+.container-backwards-50 {
+    left: 0;
+    background-color: green;
 }
+
+.panel {
+    flex: 0 0 100vw;
+    height: 100vh;
+    width: 100vw;
+}
+
+.yellow{background-color: yellow;}
+
+
+
+}
+
