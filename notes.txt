@@ -1,0 +1,37 @@
+communicate your identity and credibility
+
+
+What do I need on a portflio
+
+
+Who am I? WHta am I doing?
+
+Past Projhects: demonstrate that you are teching, you have publications.
+
+notable projects: retroverse, AI Gallery VR Portfolio
+
+
+5. Background & Experience
+
+This adds context and credibility:
+
+Education (include MSc and BSc)
+
+Professional / Teaching Roles (Salesforce intern, Demonstrator, etc.)
+
+Relevant skills (Unity, Blender, Python, WebXR, GSAP, etc.)
+
+Structure example:
+
+MSc Interactive Digital Media — Trinity College Dublin
+BSc Management Science & Information Systems — Trinity College Dublin
+
+Teaching Assistant — Programming for Digital Media
+Software Engineering Intern — Salesforce, Network Security Team
+
+Priority	Section	Purpose
+	Intro + Hero Section	Communicate who you are & your focus
+Notable Projects	Show creativity & technical ability
+Publications / Research	Establish credibility
+Experience / Skills	Context for your expertise
+Contact / Footer	Invite opportunities & networking
