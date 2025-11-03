@@ -21,6 +21,9 @@
     <!--link to css-->
     <link rel="stylesheet" href="css/gsap.css">
 
+        <!--link to css-->
+    <link rel="stylesheet" href="css/no-spine-css.css">
+
     <!--link to css-->
     <link rel="stylesheet" href="css/projects.css">
 
@@ -34,58 +37,63 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/ScrollTrigger.min.js"></script>
+
+
+    <script src="js/buttons.js"></script>
 </head>
 
 <body>
    <!--<img class="background-gif" src="gif/RECENT PROJECTS (1).gif">
     --> 
 
-    <div class="nav_container ">
+  <div class="nav_container ">
 
-        <div class="socials ">
-            <img src="img/ROSE.IE PROFILE.png " style="border-radius: 100%; ">
-            <a href="https://www.youtube.com/@rose.ie-portfolio "><i class='bx bxl-youtube'></i></a>
-            <a href="https://www.linkedin.com/in/rosieconnolly/ "><i class='bx bxl-linkedin-square'></i></a>
-            <a href="https://github.com/connolr3 "><i class='bx bxl-github'></i></a>
+    <div class="socials ">
+      <img src="img/ROSE.IE PROFILE.png " style="border-radius: 100%; ">
+      <a href="https://www.youtube.com/@rose.ie-portfolio "><i class='bx bxl-youtube'></i></a>
+      <a href="https://www.linkedin.com/in/rosieconnolly/ "><i class='bx bxl-linkedin-square'></i></a>
+      <a href="https://github.com/connolr3 "><i class='bx bxl-github'></i></a>
 
-        </div>
-        <div class="links ">
-            <a href="new.html" class="nav_item nav_active nav1 ">HOME</a>
-            <a href="#recent-projects " class="nav_item nav3 ">PROJECT ARCHIVE</a>
-            <a href="#contact " class="nav_item nav3 ">CONTACT</a>
-
-        </div>
+    </div>
+    <div class="links ">
+      <a href="new.html" class="nav_item nav_active nav1 ">HOME</a>
+      <a href="projects.html" class="nav_item nav3 ">PROJECTS</a>
+      <a href="#contact " class="nav_item nav3 ">CONTACT</a>
     </div>
 
 
+  </div>
 
 
 
-    <div class="projects">
-        <div class="filters">
-            <div class="filter">
-                All
+<!--
+     <div class="projects">
+    <div class="project design">Design Project 1</div>
+    <div class="project video">Video Project 1</div>
+    <div class="project web">Web Project 1</div>
+    <div class="project design">Design Project 2</div>
+    <div class="project video">Video Project 2</div>
+  </div>
 
-            </div>
-            <div class="filter">
-                Graphic Design
+    -->
+ 
 
-            </div>
-            <div class="filter">
-                Virtual Reality
-
-            </div>
-            <div class="filter">
-                3D Design
-            </div>
-            <div class="filter">
-                Video
-            </div>
-
-        </div>
+  
+ <div class="filters">
+  <div data-filter="all" class="filter active">All</div>
+  <div data-filter="design" class="filter">Graphic Design</div>
+  <div data-filter="vr" class="filter">Virtual Reality</div>
+  <div data-filter="3d" class="filter">3D Design</div>
+  <div data-filter="video" class="filter">Video</div>
+</div>
+  
+   
+        
+   <div class="projects">
+      
 
         <div class="main">
-            <div class="project-div art">
+            <div class="project-div design">
                 <!--Using Lenova Yoga, Sketchbook Pro and Lenova Digital Pen 2.
             -->
                 <img src="img/pilly.png">
@@ -103,7 +111,7 @@
             <div class="project-div">
                 <img src="photography/tops2.png">
             </div>
-            <div class="project-div">
+            <div class="project-div design">
                 <h2>Typography</h2>
                 <img src="img/hyper.png">
             </div>
@@ -126,15 +134,14 @@
                     </iframe>
                 </div>
             </div>
-            <div class="project-div horizontal-flex research">
+            <div class="project-div horizontal-flex research 3d">
                 <div>
                     <h2>Embodied Conversational Agents</h2>
                     <img src="gif/eca-unscreen.gif">
                     <p>Understand what an Embodied Conversational Agent is, understand how and why they are created.</p>
                 </div>
                <div>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/Iylnzm-9P8M?si=e7_OYgOXHAEvhHjK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-         
+              
                </div>
               
             </div>

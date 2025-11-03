@@ -2,7 +2,7 @@
 
 :root {
     --body-color: black;
-    --feature-color1: #A1659A;
+    --feature-color1: #aa69a2;
     --feature-color2: #039281;
     --feature-color3: #F46554;
     /*#F95738*/
@@ -145,6 +145,22 @@ body {
 .coltable{
   max-width: 25%;
 
+}
+
+.coltable {
+  flex: 1; /* distribute evenly in the flex container */
+  margin: 10px;
+  padding: 5px;
+  border-radius: 10px;
+  text-align: left;
+  transition: all 0.3s ease; /* <-- must be on the base class */
+  transform-origin: center;
+}
+
+.coltable:hover {
+  transform: scale(1.5);
+  background-color: red;
+  color: white;
 }
 
 
@@ -341,7 +357,10 @@ a {
     transform: scale(1.1);
 }
 
-
+.project:hover{
+    transition: 0.3s all linear;
+    transform: scale(1.1);
+}
 .buttons {
     display: flex;
     justify-content: center;
@@ -450,8 +469,8 @@ body {
 
 
 .circular-img {
-    width: 60vh;
-    height: 60vh;
+    width: 90vh;
+    height: 90vh;
     object-fit: cover;
     border-radius: 100%;
     position: relative;
@@ -550,6 +569,8 @@ h1 {
     transition: opacity 1.7s ease, transform 1.3s ease;
     transform: scale(1.05);
 }
+
+
 
 .container-backwards-50 {
     left: -100vw;
@@ -696,9 +717,19 @@ h1 {
   color: #999;
 }
 
+ .pub-tag {
+  color: var(--feature-color3);
+  border: var(--feature-color3) 1px solid;
+  width: fit-content;
+  border-radius: 3%;
+    padding: 4px 10px;
+  margin-bottom: 0.5em;
+  border-radius: 4px;
+}
+
 
 .toggle-abstract {
-  background-color: #a3cc00;
+  background-color: var(--feature-color2);
   color: white;
   border: none;
   padding: 4px 10px;
@@ -739,6 +770,10 @@ h1 {
 .project {
   margin-bottom: 50px;
   padding: 20px;
+  background-color: #1b1b1b9a;
+  border-radius: 1%;
+  padding: 20px;
+
 }
 .project{
   display: flex;
@@ -746,8 +781,77 @@ h1 {
 }
 .projectimage{
    aspect-ratio: 1 / 1;
-max-width: 17vw;
-min-width: 15vw;
+   width: 20vw;
+max-width:50vw !important;
+min-width: 20vw;
+}
+
+.vertical{
+  flex-direction: column;
+}
+
+.vertical .projectimage {
+  /* styles go here */
+  min-width: 50vw;
+  aspect-ratio: auto;
+}
+
+.vertical .projectinfo {
+   min-width: 100%;
+   margin: 0;
+}
+.topmargin{
+  margin-top: 10em;
+}
+.bottommargin{
+  margin-bottom: 10em;
+}
+.YTAspect{
+
+ aspect-ratio: 16/9;
+}
+
+
+h4{
+  margin: 1em;
+}
+
+.featurecolor1{
+    color:var(--feature-color1);
+}
+.featurecolor2{
+    color:var(--feature-color3);
+}
+.featurecolor3{
+   color: #c8d603;
+}
+
+.featurecolor4{
+   color:#00a592
+}
+
+
+
+.halfwidth{
+  width: 50%;
+}
+
+.middle-align{
+  text-align: center;
+}
+
+.right-align{
+  text-align: right;
+}
+
+.titlecards{
+  min-width: 80%;
+  display: flex;
+  justify-content: left;
+  column-gap: 3em;
+}
+.minititlecard{
+  height: 13vh;
 }
 
 .video{
@@ -782,6 +886,7 @@ ul{
 .tag {
   display: inline-block;
   background-color: #eee;
+  color: #000000;
   padding: 5px 10px;
   margin-top: 10px;
   border-radius: 5px;
@@ -816,8 +921,8 @@ ul{
 }
 
 .main{
-    padding-left: 10vw;
-    padding-right: 10vw;
+    padding-left: 12vw;
+    padding-right: 12vw;
 }
 
 .text{

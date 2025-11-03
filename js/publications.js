@@ -15,6 +15,7 @@ $(document).ready(function() {
                 let html = `
                     <div class="publication-item" style="margin-bottom: 1.5em;">
                         <div class="title"><strong>${pub.title}</strong></div>
+                                  ${pub.tags ? `<div class="pub-tag">${pub.tags}</div>` : ''}
                         <div class="authors">${pub.authors.join(', ')}</div>
 
                         ${pub.abstract ? `
@@ -26,8 +27,9 @@ $(document).ready(function() {
 
                         ${pub.journal ? `<div class="journal"><em>${pub.journal}</em></div>` : ''}
                         ${pub.conference ? `<div class="conference"><em>${pub.conference}</em></div>` : ''}
-                       
+                          ${pub.workshop ? `<div class="conference"><em>${pub.workshop}</em></div>` : ''}
                         ${pub.year ? `<div class="year">${pub.year}</div>` : ''}
+                  
                     </div>
                 `;
 

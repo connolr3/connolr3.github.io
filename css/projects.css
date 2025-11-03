@@ -1,8 +1,18 @@
 
+
+:root {
+    --body-color: black;
+    --feature-color1: #c240b3;
+    --feature-color2: #039281;
+    --feature-color3: #F46554;
+    /*#F95738*/
+    --text-color: rgb(241, 241, 241);
+    ;
+}
 .projects{
     position: absolute;
     width: 80vw;
-    top: 10%;
+    top: 30%;
  
     left: 10vw;
     display: flex;
@@ -23,16 +33,24 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    padding: 3em;
 }
 .filter{
-    
+    font-size: 1.3em;
     padding: 1em;
     border-radius: 10%;
     text-transform: uppercase;
 
     background-color: #03928165;
+    background-color: #1b1b1b9a;
     width: fit-content;
     margin: 3px;
+}
+
+.filter:hover{
+   transition: 0.3s all linear;
+    transform: scale(1.1);
+    color: var(--feature-color1)
 }
 
 .main{
@@ -51,7 +69,7 @@
     flex-direction: column;
 padding: 1em;
 margin: 1EM;
-background-color: #0000008e;
+background-color: #2020208e;
 height: fit-content;
 width: fit-content;
 border-radius: 3%;

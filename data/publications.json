@@ -20,11 +20,25 @@
   },
     {
     "id": "vargas2025audio",
-    "type": "conference",
+    "type": "workshop",
     "title": "Immersive Vocal Practice: Audio-Visual Evaluation of an Acoustic Virtual Environment for Vocal Rehearsal and Performance",
     "authors": [" Flores-Vargas", "Rose Connolly","Enda Bates","Rachel McDonnell"],
     "abstract": "Acoustic features of musical venues and theatres, such as early reflections and late reverberation, have been shown to influence self-perception of one’s voice, thus affecting adaptation in vocal production and musical performance. Immersive technology and the 3D representation of architectural spaces, such as digital twins and Immersive Virtual Environments (IVEs), are an effective medium for training in diverse fields. However, audio-visual IVEs could also enable real-time vocal auralisation for singers and stage actors, supporting musical performance and practice in Extended Reality (XR) and the metaverse. To investigate this, ten professional singers with over 5 years of professional music experience evaluated the usability and audio-visual plausibility of a VR-based virtual theatre. The environment was created using an audio-visual capture of a real theatre, allowing participants to sing and explore the stage acoustically and visually, with real-time first-person vocal auralisation based on Spatial Impulse Responses (SIRs) and visual rendering using Gaussian Splatting (GS). Our results revealed that participants felt present in the space, acknowledging the realism of the multimodal rendering. They recognised the potential of real-time vocal auralisation in IVE as a tool for practice and rehearsal, providing a realistic and plausible representation of performance venues. These findings suggest that high-fidelity audio-visual IVEs may support performers in vocal practice, understanding the spatial distribution and acoustics of real venues, and addressing other performance-related factors such as performance anxiety.",
     "year": 2025,
-    "publisher": "ACM"
+   "workshop":"IEEE International Workshop on the Musical Metaverse",
+    "publisher": "IEEE",
+  "tags": ["Best Paper Award"]
+  },
+  {
+    "id": "connolly2026agency",
+    "type": "conference",
+    "title": "Perceptually-Guided Redirected Teleporting: Perceptual Thresholds for Teleport Displacements in Virtual Environments",
+    "authors": [ "Rose Connolly","Victor Zordan","Rachel McDonnell"],
+"abstract": "Teleportation is one of the most common locomotion techniques in virtual reality, yet its perceptual properties remain underexplored. While redirected walking research has shown that users' movements can be subtly manipulated without detection, similar imperceptible adjustments for teleportation have not been systematically investigated. This study examines the thresholds at which teleportation displacements become noticeable to users. We conducted a repeated-measures experiment in which participants' selected teleport destinations were altered in both direction (forwards, backwards) and at different ranges (small, large). Detection thresholds for these positional adjustments were estimated using a psychophysical staircase method with a two-alternative forced choice (2AFC) task. Results show that teleport destinations can be shifted without detection, with larger tolerances for backward adjustments and across longer teleport ranges. These findings establish baseline perceptual limits for redirected teleportation and highlight its potential as a design technique. Applications include supporting interpersonal distance management in social VR, guiding players toward objectives in games, and assisting novice users with navigation. By identifying the limits of imperceptible teleportation adjustments, this work extends redirection principles beyond walking to teleportation and opens new opportunities for adaptive and socially aware VR locomotion systems.",
+"year": 2026,
+
+  "journal": "IEEE Transactions on Visualization and Computer Graphics",
+    "publisher": "IEEE",
+  "tags": ["ArXIV Preprint"]
   }
 ]
