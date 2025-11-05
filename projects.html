@@ -26,6 +26,7 @@
 
     <!--link to css-->
     <link rel="stylesheet" href="css/projects.css">
+        <link rel="stylesheet" href="css/backgroundletters.css">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ysabeau">
     <!--box icons:https://boxicons.com/ -->
@@ -40,6 +41,8 @@
 
 
     <script src="js/buttons.js"></script>
+    
+    <script src="js/backgroundletters.js"></script>
 </head>
 
 <body>
@@ -56,9 +59,9 @@
 
     </div>
     <div class="links ">
-      <a href="new.html" class="nav_item nav_active nav1 ">HOME</a>
+      <a href="index.html" class="nav_item nav_active nav1 ">HOME</a>
       <a href="projects.html" class="nav_item nav3 ">PROJECTS</a>
-      <a href="#contact " class="nav_item nav3 ">CONTACT</a>
+      <a href="pub.html" class="nav_item nav3 ">PUBLICATIONS</a>
     </div>
 
 
@@ -74,11 +77,6 @@
     <div class="project design">Design Project 2</div>
     <div class="project video">Video Project 2</div>
   </div>
-
-    -->
- 
-
-  
  <div class="filters">
   <div data-filter="all" class="filter active">All</div>
   <div data-filter="design" class="filter">Graphic Design</div>
@@ -86,7 +84,143 @@
   <div data-filter="3d" class="filter">3D Design</div>
   <div data-filter="video" class="filter">Video</div>
 </div>
-  
+    -->
+ 
+
+  <div class="screen " id="fold-effect">
+	<div class="wrapper-3d">
+		<div class="fold fold-top">
+			<div class="fold-align">
+				<div class="fold-content">
+					<div class="marquee">
+						<div class="track">
+							Virtual.Virtual.<span class="-focus">Virtual Reality.</span>Virtual Reality.Virtual Reality.Virtual Reality.Virtual Reality.
+						</div>
+					</div>
+
+					<div class="marquee">
+						<div class="track">
+							Visual.Visual.<span class="-focus">Visual.</span>Visual.Visual.Visual.Visual.Visual.
+						</div>
+					</div>
+
+					<div class="marquee">
+						<div class="track">
+							Design.Design.<span class="-focus">Design.</span>Design.Design.Design.Design.Design.
+						</div>
+					</div>
+
+					<div class="marquee">
+						<div class="track">
+							A Digital World.A Digital World.A Digital World.<span class="-focus">A Digital World.</span>A Digital World.A Digital World.A Digital World.A Digital World.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="fold fold-center" id="center-fold">
+			<div class="fold-align">
+				<div class="fold-content" id="center-content">
+					<div class="marquee">
+						<div class="track">
+							Virtual.Virtual.<span class="-focus">Virtual Reality.</span>Virtual Reality.Virtual Reality.Virtual Reality.Virtual Reality.
+						</div>
+					</div>
+
+					<div class="marquee">
+						<div class="track">
+							Visual.Visual.<span class="-focus">Visual.</span>Visual.Visual.Visual.Visual.Visual.
+						</div>
+					</div>
+
+					<div class="marquee">
+						<div class="track">
+							Design.Design.<span class="-focus">Design.</span>Design.Design.Design.Design.Design.
+						</div>
+					</div>
+
+					<div class="marquee">
+						<div class="track">
+							A Digital World.A Digital World.A Digital World.<span class="-focus">A Digital World.</span>A Digital World.A Digital World.A Digital World.A Digital World.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="fold fold-bottom">
+			<div class="fold-align">
+				<div class="fold-content">
+					<div class="marquee">
+						<div class="track">
+							Virtual.Virtual.<span class="-focus">Virtual Reality.</span>Virtual Reality.Virtual Reality.Virtual Reality.Virtual Reality.
+						</div>
+					</div>
+
+					<div class="marquee">
+						<div class="track">
+							Visual.Visual.<span class="-focus">Visual.</span>Visual.Visual.Visual.Visual.Visual.
+						</div>
+					</div>
+
+					<div class="marquee">
+						<div class="track">
+							Design.Design.<span class="-focus">Design.</span>Design.Design.Design.Design.Design.
+						</div>
+					</div>
+
+					<div class="marquee">
+						<div class="track">
+							A Digital World.A Digital World.A Digital World.<span class="-focus">A Digital World.</span>A Digital World.A Digital World.A Digital World.A Digital World.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+<div class="filters">
+ <a href="#" class="button filter active js-button">
+  <span class="button__inner">
+    <span class="button__text js-button__text">All</span>
+    <span class="button__hover js-button__hover">All</span>
+  </span>
+</a>
+
+  <a href="#" data-filter="vr" class="filter button js-button">
+  <span class="button__inner">
+    <span class="button__text js-button__text">Virtual Reality</span>
+    <span class="button__hover js-button__hover">Virtual Reality</span>
+  </span>
+</a>
+   
+  <a href="#" data-filter="design" class="filter button js-button">
+  <span class="button__inner">
+    <span class="button__text js-button__text">Art & Design</span>
+    <span class="button__hover js-button__hover">Art & Design</span>
+  </span>
+</a>
+   
+  <a href="#" data-filter="3d" class="filter button js-button">
+  <span class="button__inner">
+    <span class="button__text js-button__text">Research</span>
+    <span class="button__hover js-button__hover">Research</span>
+  </span>
+</a>
+   
+  <a href="#" data-filter="video" class="filter button js-button">
+  <span class="button__inner">
+    <span class="button__text js-button__text">Audio & Film</span>
+    <span class="button__hover js-button__hover">Audio & Film</span>
+  </span>
+</a>
+   
+</div>
+ 
    
         
    <div class="projects">
@@ -100,7 +234,7 @@
                 <p>Phoenix & Dragon</p>
             </div>
 
-            <div class="project-div art">
+            <div class="project-div design">
 
                 <!--Using Lenova Yoga, Sketchbook Pro and Lenova Digital Pen 2.
             -->
@@ -108,14 +242,14 @@
                 <img src="img/final4.png">
                 <p>Phoenix & Dragon</p>
             </div>
-            <div class="project-div">
+            <div class="project-div design">
                 <img src="photography/tops2.png">
             </div>
             <div class="project-div design">
                 <h2>Typography</h2>
                 <img src="img/hyper.png">
             </div>
-            <div class="project-div horizontal-flex">
+            <div class="project-div horizontal-flex design">
              hi
                 <img src="img/mini1.png">
                 <img src="img/FINAL-Colour.png">
@@ -123,7 +257,7 @@
             </div>
 
    
-            <div class="project-div horizontal-flex">
+            <div class="project-div horizontal-flex design">
              
                 <img src="img/game_scene.jpg">
                 <div class="sketchfab-embed-wrapper"> <iframe title="Kart" class="kartproject"
@@ -134,7 +268,7 @@
                     </iframe>
                 </div>
             </div>
-            <div class="project-div horizontal-flex research 3d">
+            <div class="project-div horizontal-flex research vr">
                 <div>
                     <h2>Embodied Conversational Agents</h2>
                     <img src="gif/eca-unscreen.gif">
@@ -145,7 +279,7 @@
                </div>
               
             </div>
-            <div class="project-div horizontal-flex research">
+            <div class="project-div horizontal-flex vr research">
                 <div class="div">
                     <h2>The Impact of Navigation on Proxemics</h2>
                     <h3>IEEE TVCG Paper 2025</h3>
@@ -177,10 +311,16 @@
                 <iframe width="560" height="315" src="https://www.youtube.com/watch?v=8QLjCAm1KUI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/8QLjCAm1KUI?si=V9ypI3idBRuSF8aR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
-            <div class="project-div">
+            <div class="project-div video">
                 <h2>The Race Home</h2>
                 <img src="img/TRH.png">
                 <P>Interactive Digital Media developed short film</P>
+            </div>
+                  <div class="project-div video">
+                <h2>Soundscape: Sensory Overlaod</h2>
+                <img src="img/sensory overload.png">
+                <P>Sensory overload happens when you’re getting more input from your five senses than your brain can sort through and process. Multiple conversations going on in one room, flashing overhead lights, or a loud party can all produce the symptoms of sensory overload. Developed by: Rosie Connolly, Yuntongying Xiao, Delia Lynch, Luke Harrison
+</P>
             </div>
                    <div class="project-div design">
                 <h2>GV Branding</h2>

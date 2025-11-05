@@ -31,6 +31,9 @@
 .role{
   padding-bottom: 1.2em;
 }
+.bx{
+  color: white !important;
+}
 .footer{
   padding: 30vh;
 
@@ -143,10 +146,13 @@ body {
 }
 
 .coltable{
-  max-width: 25%;
+  width: 25%;
 
 }
-
+.table{
+  flex-wrap: wrap; /* allows them to wrap on smaller screens */
+  display: flex;
+}
 .coltable {
   flex: 1; /* distribute evenly in the flex container */
   margin: 10px;
@@ -155,15 +161,24 @@ body {
   text-align: left;
   transition: all 0.3s ease; /* <-- must be on the base class */
   transform-origin: center;
+  opacity: 0;
+}
+.coltable {
+  position: relative;
+  z-index: 1;
 }
 
 .coltable:hover {
-  transform: scale(1.5);
-  background-color: red;
-  color: white;
+  transform: scale(1.1) !important;
+  background-color: red !important;
+  color: white !important;
 }
 
-
+table:hover{
+    transform: scale(1.1) !important;
+  background-color: red !important;
+  color: white !important;
+}
 
 .table{
   column-gap: 30px;
@@ -725,6 +740,14 @@ h1 {
     padding: 4px 10px;
   margin-bottom: 0.5em;
   border-radius: 4px;
+}
+
+
+
+.minititlecard {
+  opacity: 0;
+  transform: scale(0.8);
+  display: inline-block;
 }
 
 

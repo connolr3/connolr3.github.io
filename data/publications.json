@@ -9,15 +9,6 @@
     "year": 2025,
     "publisher": "IEEE"
   },
-  {
-    "id": "doe2024vrstudy",
-    "type": "conference",
-    "title": "A Study on VR Interaction Dynamics",
-    "authors": ["Jane Doe", "John Smith"],
-    "conference": "ACM Symposium on Virtual Reality Software and Technology",
-    "year": 2024,
-    "publisher": "ACM"
-  },
     {
     "id": "vargas2025audio",
     "type": "workshop",
