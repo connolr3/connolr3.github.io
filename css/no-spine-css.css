@@ -147,14 +147,8 @@ body {
 
 .coltable{
   width: 25%;
-
-}
-.table{
-  flex-wrap: wrap; /* allows them to wrap on smaller screens */
-  display: flex;
-}
-.coltable {
-  flex: 1; /* distribute evenly in the flex container */
+  position: relative;
+    flex: 1; /* distribute evenly in the flex container */
   margin: 10px;
   padding: 5px;
   border-radius: 10px;
@@ -162,11 +156,13 @@ body {
   transition: all 0.3s ease; /* <-- must be on the base class */
   transform-origin: center;
   opacity: 0;
+
 }
-.coltable {
-  position: relative;
-  z-index: 1;
+.table{
+  flex-wrap: wrap; /* allows them to wrap on smaller screens */
+  display: flex;
 }
+
 
 .coltable:hover {
   transform: scale(1.1) !important;
@@ -373,8 +369,8 @@ a {
 }
 
 .project:hover{
-    transition: 0.3s all linear;
-    transform: scale(1.1);
+    background-color: #2b2a2a;
+        transition: 0.3s all linear;
 }
 .buttons {
     display: flex;
@@ -414,6 +410,12 @@ body {
   font-size: 1.5em;
 }
 
+.bx:hover{
+  color:var(--feature-color3) !important;
+    transition: 0.3s all linear;
+    transform: scale(1.1);
+}
+
 .cover {
     left: 0%;
     top: 0%;
@@ -433,9 +435,7 @@ body {
   width: 1vw;
   height: 100vh;
 }
-.section{
-  margin-top: 1em;
-}
+
 .box,
 .box2 {
     display: block;
@@ -483,14 +483,6 @@ body {
 
 
 
-.circular-img {
-    width: 90vh;
-    height: 90vh;
-    object-fit: cover;
-    border-radius: 100%;
-    position: relative;
-    top: 0%;
-}
 
 .top {
     width: 110vh;
@@ -505,7 +497,7 @@ h1 {
     padding-bottom: 20px;
     color: var(--text-color);
     line-height: 0.8;
-    font-size: 5.2em;
+    font-size: 5.2rem;
     font-weight: bolder;
     text-transform: uppercase;
 }
@@ -579,13 +571,20 @@ h1 {
     width: 200vw;
     /* Width to accommodate two panels side-by-side */
 }
-
+.breathe{
+  position: relative;
+}
 .breathe:hover {
     transition: opacity 1.7s ease, transform 1.3s ease;
     transform: scale(1.05);
 }
 
-
+testhover:hover{
+      transition: opacity 1.7s ease, transform 1.3s ease;
+    transform: scale(1.05);
+  background-color: red;
+  color: #00a305;
+}
 
 .container-backwards-50 {
     left: -100vw;
@@ -744,11 +743,6 @@ h1 {
 
 
 
-.minititlecard {
-  opacity: 0;
-  transform: scale(0.8);
-  display: inline-block;
-}
 
 
 .toggle-abstract {
@@ -785,6 +779,7 @@ h1 {
 .projects-section {
   max-width: 90vw;
   display: flex;
+
   margin: 0 auto;
   padding: 20px;
   align-items: top;
@@ -801,16 +796,68 @@ h1 {
 .project{
   display: flex;
   row-gap: 1em;
+    flex-wrap: wrap; /*  allow items to move to next line */
 }
-.projectimage{
-   aspect-ratio: 1 / 1;
-   width: 20vw;
-max-width:50vw !important;
-min-width: 20vw;
+.projectimage {
+  width: 20vw;
+  min-width: 250px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  display: flex;
+  flex-direction: column; /* stack image and text */
+  align-items: center; /* center both horizontally */
+  text-align: center;
+  justify-content: center;
 }
+
+.projectvideo {
+  width: 100%;
+  min-width: 350px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  display: flex;               /* ✅ Make it a flex container */
+  flex-direction: column;      /* Stack title + video vertically */
+  align-items: center;         /* Center horizontally */
+  justify-content: center;     /* Center vertically if it has height */
+  text-align: center;
+}
+
+.video {
+  width: 80%;
+  max-width: 800px;            /* optional: cap the video width */
+  aspect-ratio: 16 / 9;        /* ✅ keep correct video proportions */
+  margin-top: 1em;
+}
+
+.YTAspect {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+
+/* Wrap the circular image in a fixed-ratio box */
+.image-wrapper {
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  position: relative;
+}
+
+/* Keep the image perfectly circular */
+.circularimage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+}
+
+
 
 .vertical{
   flex-direction: column;
+  justify-content: center;
 }
 
 .vertical .projectimage {
@@ -822,6 +869,38 @@ min-width: 20vw;
 .vertical .projectinfo {
    min-width: 100%;
    margin: 0;
+}
+
+.projectinfo{
+  margin: 1.5em;
+   flex: 1; /* take remaining space */
+  min-width: 300px; /* ensures text fits when wrapping */
+}
+/* 🧠 Responsive stacking for smaller screens */
+@media (max-width: 1000px) {
+  .project {
+    flex-direction: column; /* stack vertically */
+    align-items: center; /* center contents */
+    text-align: center;
+  }
+.introdiv{
+  flex-direction: column;
+  justify-content: center !important;
+  align-items: flex-start !important;
+  row-gap: 2em;
+}
+.coverimage{
+max-width: 30vw !important;
+max-height: 30vw !important;
+}
+  .projectimage {
+    width: 60vw;
+    margin-bottom: 20px;
+  }
+
+  .projectinfo {
+    width: 100%;
+  }
 }
 .topmargin{
   margin-top: 10em;
@@ -867,28 +946,53 @@ h4{
   text-align: right;
 }
 
-.titlecards{
-  min-width: 80%;
+.titlecards {
   display: flex;
-  justify-content: left;
-  column-gap: 3em;
-}
-.minititlecard{
-  height: 13vh;
+  flex-wrap: wrap; /* ✅ allows wrapping to next line */
+  justify-content: flex-start;
+  width: 100%; /* make sure it fits its parent */
+  max-width: 100%;
+  overflow: hidden; /* prevent visual overflow */
+  margin-top: 1em;
 }
 
-.video{
-  position: relative;
+.minititlecard {
+  height: 13vh;
+  max-width: 100%;
+  object-fit: contain;
+  flex: 0 1 auto; /* ✅ let it shrink if needed */
+    opacity: 1;
+  transform: scale(0.8);
+  display: inline-block;
 }
+
+
+
+
+.minititlecard:hover {
+  transform: scale(1.05);
+   transition: transform 0.3s ease;
+}
+
+/* 📱 Responsive tweak */
+@media (max-width: 768px) {
+  .titlecards {
+    justify-content: center;
+    gap: 1em;
+  }
+
+  .minititlecard {
+    height: 10vh; /* smaller on mobile */
+  }
+}
+
+
 .smallertext{
   font-size: 90%;
 }
 ul{
    list-style-type: none;
    padding:0.5em;
-}
-.projectinfo{
-  margin: 1.5em;
 }
 
 .video-container {
@@ -954,6 +1058,7 @@ ul{
 }
 
 .section{
+  margin-top: 1em;
     min-height: 80vh;
     min-width: 50vw;
 }
