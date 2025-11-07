@@ -26,6 +26,33 @@ $(document).ready(function () {
   });
 
 
+gsap.to(".underline", {
+  width: "60%",
+  duration: 1,
+  ease: "power2.out",
+  scrollTrigger: {
+    trigger: ".footerinfo",
+    start: "top 80%",
+    end: "bottom 60%",
+    toggleActions: "play reverse play reverse"
+  }
+});
+
+
+gsap.from(".footerinfo", {
+  scrollTrigger: {
+    trigger: ".footerinfo",
+    start: "top 80%",
+    end: "bottom 20%",
+    scrub: true // smooth reverse/forward tied to scroll
+  },
+  y: 60,
+  opacity: 0,
+  duration: 1.5,
+  ease: "power3.out"
+});
+
+
 $(".coltable").hover(
   function () {
     gsap.to(this, { scale: 1.1, backgroundColor: "red", color: "white", duration: 0.3 });

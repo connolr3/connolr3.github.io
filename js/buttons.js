@@ -2,14 +2,15 @@
 document.addEventListener('DOMContentLoaded', () => {
     const filters = document.querySelectorAll('.filter');
   const projects = document.querySelectorAll('.project-div');
+  
   console.log(filters.length);
     console.log(projects.length);
   filters.forEach(filter => {
     filter.addEventListener('click', () => {
       // Update active state
       console.log("test");
-      filters.forEach(f => f.classList.remove('active'));
-      filter.classList.add('active');
+      filters.forEach(f => f.classList.remove('activeButton'));
+      filter.classList.add('activeButton');
 
       const selected = filter.dataset.filter;
 
@@ -62,6 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
     TweenMax.staggerTo(this.split2.chars, 0.5, {
       y: 0
     }, 0.01);
+
   }
 
   mouseOut() {
@@ -89,7 +91,10 @@ document.querySelectorAll('.js-button').forEach( el => {
 
 
 
-    console.log("end");
+
+
+
+    console.log("end!");
 
     });
 

@@ -9,40 +9,28 @@
     --text-color: rgb(241, 241, 241);
     ;
 }
-.projects{
-    position: absolute;
-    width: 80vw;
-    top: 30%;
- 
-    left: 10vw;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items:center;
-    height: fit-content;
-    padding: 2vw;
-    border-radius: 1em;
-    row-gap: 1em;
-    padding: 1em 1em 10em 1em;
-}
 
 .filters{
     width: 100%;
     position: relative;
     display: flex;
-    top: 10vh;;
+    flex-wrap: wrap;
+    top: 10vh;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content:center;
+    row-gap: 0;
+    column-gap: 15px;
     padding: 3em;
 }
-.active{
+
+
+.activeButton{
     color: var(--feature-color2) !important;
     background-color: var(--feature-color1) !important;
 }
 .filter{
     font-size: 1.3em;
-    padding: 1em;
+    padding: 0.5em;
     border-radius: 10%;
     text-transform: uppercase;
 
@@ -58,69 +46,20 @@
     color: var(--feature-color1)
 }
 
-.main{
-    width: 100%;
-    position:  relative;
-    display: flex;
-    flex-wrap: wrap;
-    border-radius: 1em;
-    justify-content: space-evenly;
- 
+
+
+
+
+
+
+.project-div h2{
+ font-size: 1.2em;
 }
-
-.project-div{
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-padding: 1em;
-margin: 1EM;
-background-color: #2020208e;
-height: fit-content;
-width: fit-content;
-border-radius: 3%;
+.covercontent{
+  text-align: center;
 }
-
-.project-div img{
-    max-height: 60vh;
-    max-width: 50vw !important;
-}
-
-.horizontal-flex{
-display: flex;
-flex-direction: row;
-column-gap: 1em;
-}
-
-.horizontal-flex img{
-max-width: 30vw !important;
-object-fit: contain;
-flex-wrap: wrap;
-    }
-
-
-    .kartproject{
-        min-width: 40vw;
-        min-height: 20vw;
-        object-fit: contain;
-    }
-.project-div:hover{
-
-color: var(--light-feature-color3);
-transition: 0.3s all linear;
-transform: scale(1.05);
-background-color: #6e6e6ed1;
-
-}
-
-.main img{
-    max-width: 90%;
-    max-height: 20rgba(0, 0, 0, 0.822);
-    object-fit: cover;
-    border-radius: 1%;
-}
-
-.main h2{
- font-size: 1.5em;
+.project-div h3{
+ font-size: 1em;
 }
 .background-gif{
     position: fixed;
@@ -132,6 +71,86 @@ background-color: #6e6e6ed1;
     min-width: 100vw  !important;
     min-height: 100vh !important;
     object-fit: cover;
+}
+
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  padding: 1rem;
+  max-width: 80vw;
+  left: 10vw;
+  position: relative;
+  top: 20vh;
+}
+.project-div {
+  position: relative;
+  flex: 1 1 300px;
+  max-width: 500px;
+  background-color: #202020b2;
+  border-radius: 8px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+.covercontent{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+}
+.covercontent.expanded {
+  max-width: 40vh;
+}
+/* Expanded state */
+.project-div.expanded {
+  width: 95%;           /* almost full width */
+  max-width: none;
+  min-height: 60vh;     /* take up more vertical space */
+  z-index: 10;
+  
+  min-width: 66%
+}
+
+/* Extra content slides in */
+.extracontent {
+  position: absolute;    /* overlay for desktop */
+  top: 0;
+  background-color: rgb(0, 0, 0);
+  right: 0;
+  width: 60%;
+  height: 100%;
+  padding: 2rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s ease;
+  overflow-y: auto;
+}
+
+.project-div.expanded .extracontent {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .project-div.expanded {
+    width: 95%;
+    min-height: auto;
+    flex-direction: column;
+  }
+
+  .extracontent {
+    position: relative;
+    width: 100%;
+    height: auto;
+    opacity: 1;
+    pointer-events: auto;
+    margin-top: 1rem;
+  }
 }
 
 
@@ -228,5 +247,4 @@ background-color: #6e6e6ed1;
 		transition: transform .4s cubic-bezier(.7,0,.3,1);
 		transition: transform .4s cubic-bezier(.7,0,.3,1),-webkit-transform .4s cubic-bezier(.7,0,.3,1);
 		z-index: 0;
-	}
-}
+	}}

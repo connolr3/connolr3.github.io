@@ -306,6 +306,7 @@ p {
 .nav_container {
     display: flex;
     background-color: black;
+    height: fit-content;
     color: inherit;
     align-items: center;
     padding-top: 0rem;
@@ -346,6 +347,7 @@ p {
 
 .socials img {
     min-width: 65px;       /* fixed or responsive width */
+    width: 65px;
     height: auto;      /* maintain aspect ratio */
     border-radius: 100%; /* makes it a circle */
     display: block;    /* optional, removes inline spacing */
@@ -669,9 +671,9 @@ testhover:hover{
 
 .publications-container{
   
- 
+ position: relative;
 
-    top: 10vh;
+    top: 4vh;
     margin: 10vh;;
 
 }
@@ -824,7 +826,7 @@ testhover:hover{
   text-align: center;
 }
 
-.video {
+.videohome {
   width: 80%;
   max-width: 800px;            /* optional: cap the video width */
   aspect-ratio: 16 / 9;        /* ✅ keep correct video proportions */
@@ -887,6 +889,15 @@ testhover:hover{
     display: none !important;
   }
 /* 🧠 Responsive stacking for smaller screens */
+
+@media (max-width: 1200px) {
+  .offsetflex{
+    flex-direction: column;
+  }
+
+}
+
+
 @media (max-width: 1000px) {
   .project {
     flex-direction: column; /* stack vertically */
@@ -900,6 +911,7 @@ testhover:hover{
   .large{
     display: none !important;
   }
+
    .small{
     display: none;
   }
@@ -941,6 +953,20 @@ max-height: 30vw !important;
 .YTAspect{
 
  aspect-ratio: 16/9;
+}
+
+.footerinfo {
+  text-align: center;
+  position: relative;
+  color: #eee;
+}
+
+.underline {
+  height: 3px;
+  width: 0;
+  background: var(--feature-color1);
+  margin: 8px auto 16px;
+  border-radius: 2px;
 }
 
 
@@ -1011,6 +1037,7 @@ h4{
   background-color: #333333a0;
   position: relative;
   width: 100%;
+  z-index: 1300000;
 }
 
 .topnav #myLinks {

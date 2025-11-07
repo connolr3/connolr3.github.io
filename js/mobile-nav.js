@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    console.log("ready");
+    console.log("mobile nav ready");
  var trigger = document.getElementById("triggernav");
       trigger.addEventListener("click", myFunction);
 function myFunction() {
