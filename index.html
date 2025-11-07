@@ -33,19 +33,21 @@
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="js/gsap-scroll.js"></script>
+  <script src="js/mobile-nav.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/ScrollTrigger.min.js"></script>
 </head>
 
 <body>
 
-  <div class="nav_container ">
+  <div class="nav_container large">
 
     <div class="socials ">
 
       <a href="index.html#home"> <img src="img/ROSE.IE PROFILE.png " style="border-radius: 100%; "></a>
-      <a href="https://www.youtube.com/@rose.ie-portfolio "><i class='bx bxl-youtube'></i></a>
-      <a href="https://www.linkedin.com/in/rosieconnolly/ "><i class='bx bxl-linkedin-square'></i></a>
-      <a href="https://github.com/connolr3 "><i class='bx bxl-github'></i></a>
+      <a class="bigscreenonly" href="https://www.youtube.com/@rose.ie-portfolio "><i class='bx bxl-youtube'></i></a>
+      <a class="bigscreenonly" href="https://www.linkedin.com/in/rosieconnolly/ "><i
+          class='bx bxl-linkedin-square'></i></a>
+      <a class="bigscreenonly" href="https://github.com/connolr3 "><i class='bx bxl-github'></i></a>
 
     </div>
     <div class="links ">
@@ -53,6 +55,42 @@
       <a href="projects.html" class="nav_item nav3 ">PROJECTS</a>
       <a href="pub.html" class="nav_item nav3 ">PUBLICATIONS</a>
 
+    </div>
+
+
+  </div>
+
+  <div class="nav_container middle ">
+
+    <div class="socials ">
+
+      <a href="index.html#home"> <img src="img/ROSE.IE PROFILE.png " style="border-radius: 100%; "></a>
+
+    </div>
+    <div class="links ">
+      <a href="index.html" class="nav_item nav_active nav1 ">HOME</a>
+      <a href="projects.html" class="nav_item nav3 ">PROJECTS</a>
+      <a href="pub.html" class="nav_item nav3 ">PUBLICATIONS</a>
+
+    </div>
+
+
+  </div>
+
+  <div class="small ">
+
+    <!-- Top Navigation Menu -->
+    <div class="topnav">
+         <a href="#home" class="active"><img src="img/ROSE.IE PROFILE.png " class="logo icon" style="border-radius: 100%; "></a>
+      <div id="myLinks">
+        <a href="index.html" class="nav_item nav_active nav1 ">HOME</a>
+        <a href="projects.html" class="nav_item nav3 ">PROJECTS</a>
+        <a href="pub.html" class="nav_item nav3 ">PUBLICATIONS</a>
+      </div>
+      <a href="javascript:void(0);" class="icon" id="triggernav" >
+        <i class="bx bxl-youtube"></i>
+      </a>
+   
     </div>
 
 
@@ -77,7 +115,7 @@
       </div>
 
       <div class="text">
-        <h1>Rosie Connolly</h1>
+        <h1>Rosie Connolly!</h1>
         <p>I'm a VR researcher interested in all forms of creative technology!</p>
         <p>
           I’m currently researching virtual navigation and social proxemics in immersive VR environments
@@ -93,20 +131,20 @@
 
       </div>
 
-<!--On Windows Shift + Alt + F-->
+      <!--On Windows Shift + Alt + F-->
 
     </div>
     <div class="projects-div section">
       <h1>Recent Projects</h1>
       <div class="project">
-     <div class="projectimage">
-  <div class="image-wrapper">
-    <img src="img/retroverse.JPG" class="breathe circularimage">
-  </div>
-  <h4 class="project-title featurecolor1 middle-align">
-    Created by Rose Connolly, Marcia Marques, Vasiliki Karathansi, Brad Lee and Audrey
-  </h4>
-</div>
+        <div class="projectimage">
+          <div class="image-wrapper">
+            <img src="img/retroverse.JPG" class="breathe circularimage">
+          </div>
+          <h4 class="project-title featurecolor1 middle-align">
+            Created by Rose Connolly, Marcia Marques, Vasiliki Karathansi, Brad Lee and Audrey
+          </h4>
+        </div>
 
         <div class="projectinfo">
           <h2 class="project-title">Lost in The Retroverse</h2>
@@ -156,11 +194,11 @@
 
         </div>
         <div class="projectimage">
-  <div class="image-wrapper">
-    <img src="img/ai-cropped.png" class="breathe circularimage">
-  </div>
+          <div class="image-wrapper">
+            <img src="img/ai-cropped.png" class="breathe circularimage">
+          </div>
         </div>
-       
+
       </div>
 
 
