@@ -899,16 +899,25 @@ testhover:hover{
   .education{
     max-width: none;
   }
+  .abstract{
+    font-size: 10px !important;
+  }
 
 }
 @media (max-width: 1200px) {
  .publications-container{
   
+
+
  position: relative;
 
     top: 20vh;
     margin: 3vh;
 
+}
+
+.toggle-abstract{
+  font-size: 15px !important;
 }
   .large{
     display: none !important;
@@ -943,7 +952,9 @@ testhover:hover{
     h1{
     font-size: 6.5vw;
   }
-
+ .abstract{
+    font-size: 14px !important;
+  }
   .publications-container{
   
  position: relative;
@@ -955,7 +966,12 @@ testhover:hover{
 
 
   h2{
-    font-size: 4.8vw;
+    font-size: 27px
+  }
+
+  h3{
+    font-size: 15px;
+    color: var(--feature-color3);
   }
 
   p{
