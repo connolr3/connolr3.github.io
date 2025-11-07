@@ -34,8 +34,7 @@
     border-radius: 10%;
     text-transform: uppercase;
 
-    background-color: #03928165;
-    background-color: #1b1b1b9a;
+    background-color: #03494198 !important;
     width: fit-content;
     margin: 3px;
 }
@@ -95,6 +94,9 @@
   overflow: hidden;
   transition: all 0.4s ease;
 }
+.white{
+    background-color: #ffffffc5 !important;
+}
 .covercontent{
   display: flex;
   flex-direction: column;
@@ -119,7 +121,7 @@
 .extracontent {
   position: absolute;    /* overlay for desktop */
   top: 0;
-  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.726);
   right: 0;
   width: 60%;
   height: 100%;
@@ -142,22 +144,53 @@
     min-height: auto;
     flex-direction: column;
   }
+  .project-div {
+    width: 95%;
+    height: 225px;
+    padding: 10px;
+    min-height: auto;
+    flex-direction: column;
+  }
+  
 .filters{
   padding: 0;
   top: 4vh;
 }
-
+.filter{
+    font-size: 10px !important;
+    padding: 0px 20px !important;
+    border-radius: 10%;
+    margin: 3px;
+}
+img {
+  padding-bottom: 15px;
+}
 .projects{
   top:10vh;
 }
-  .extracontent {
-    position: relative;
-    width: 100%;
-    height: auto;
-    opacity: 1;
-    pointer-events: auto;
-    margin-top: 1rem;
-  }
+.project-div.expanded  {
+ height: fit-content
+}
+.covercontent{
+  height: 100%;
+  position: relative;
+  width: 100%;
+
+}
+.covercontent.expanded{
+  height: 50%;
+    top: 0%;
+}
+.extracontent{
+  width: 100%;
+bottom: 0;
+top: 0;
+max-height: 50%;
+position:  relative !important;
+height: fit-content;
+}
+
+
 }
 
 
