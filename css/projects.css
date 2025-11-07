@@ -142,7 +142,14 @@
     min-height: auto;
     flex-direction: column;
   }
+.filters{
+  padding: 0;
+  top: 4vh;
+}
 
+.projects{
+  top:10vh;
+}
   .extracontent {
     position: relative;
     width: 100%;
