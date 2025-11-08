@@ -1,5 +1,42 @@
 
 document.addEventListener('DOMContentLoaded', () => {
+  
+const foldTracks = document.querySelectorAll('.fold .track');
+
+const bgTexts = {
+  all: [
+    "Projects. Projects. <span class='-focus'>Projects.</span> Projects. Projects. Projects. Projects.",
+    "Projects. Projects. <span class='-focus'>Projects.</span> Projects. Projects. Projects. Projects.",
+    "Projects. Projects. <span class='-focus'>Projects.</span> Projects. Projects. Projects. Projects.",
+    "Projects. Projects. <span class='-focus'>Projects.</span> Projects. Projects. Projects. Projects."
+  ],
+  vr: [
+    "Virtual.Virtual.<span class='-focus'>Virtual Reality.</span>Virtual Reality.Virtual Reality.Virtual Reality.Virtual Reality.",
+    "VR Research.VR Research.<span class='-focus'>VR Research.</span>VR Research.VR Research.VR Research.VR Research.",
+    "Immersive.Immersive.<span class='-focus'>Immersive.</span>Immersive.Immersive.Immersive.Immersive.",
+    "Virtual Worlds.Virtual Worlds.<span class='-focus'>Virtual Worlds.</span>Virtual Worlds.Virtual Worlds.Virtual Worlds."
+  ],
+  design: [
+    "2D Design. 2D Design.<span class='-focus'>2D Design.</span>2D Design. 2D Design. 2D Design. 2D Design.",
+    "3D Design. 3D Design.<span class='-focus'>3D Design.</span>3D Design. 3D Design. 3D Design. 3D Design.",
+    "2D Design. 2D Design.<span class='-focus'>2D Design.</span>2D Design. 2D Design. 2D Design. 2D Design.",
+    "3D Design. 3D Design.<span class='-focus'>3D Design.</span>3D Design. 3D Design. 3D Design. 3D Design."
+  ],
+  research: [
+    "Research. Research.<span class='-focus'>Research.</span>Research. Research. Research. Research.",
+    "Research. Research.<span class='-focus'>Research.</span>Research. Research. Research. Research.",
+    "Research. Research.<span class='-focus'>Research.</span>Research. Research. Research. Research.",
+    "Research. Research.<span class='-focus'>Research.</span>Research. Research. Research. Research."
+  ],
+  video: [
+    "Audio. Audio.<span class='-focus'>Audio & Film.</span>Audio. Audio. Audio. Audio.",
+    "Film. Film.<span class='-focus'>Audio & Film.</span>Film. Film. Film. Film.",
+    "Audio. Audio.<span class='-focus'>Audio & Film.</span>Audio. Audio. Audio. Audio.",
+    "Film. Film.<span class='-focus'>Audio & Film.</span>Film. Film. Film. Film."
+  ]
+};
+
+
     const filters = document.querySelectorAll('.filter');
   const projects = document.querySelectorAll('.project-div');
   
@@ -13,7 +50,11 @@ document.addEventListener('DOMContentLoaded', () => {
       filter.classList.add('activeButton');
 
       const selected = filter.dataset.filter;
-
+  const texts = bgTexts[selected] || bgTexts.all;
+      foldTracks.forEach((track, idx) => {
+      track.innerHTML = texts[idx % texts.length]; // wrap if less tracks than texts
+    });
+  console.log("clicking");
       projects.forEach(project => {
         if (selected === 'all' || project.classList.contains(selected)) {
           project.style.display = 'flex'; // or 'block' if your layout is vertical
@@ -95,6 +136,25 @@ document.querySelectorAll('.js-button').forEach( el => {
 
 
     console.log("end!");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     });
 

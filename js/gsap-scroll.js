@@ -128,7 +128,7 @@ gsap.to(".minititlecard", {
     scrollTrigger: {
       trigger: ".background-div",
       start: "top 80%",
-     scrub: true, // animation tied to scroll
+      toggleActions: "play none none reverse",
       markers: true
     }
   });
@@ -160,21 +160,6 @@ gsap.from(".roles .role", {
 });
 
 
-
-gsap.utils.toArray(".projectimage img").forEach((img) => {
-  gsap.from(img, {
-    y: 50,              // start 50px below
-    opacity: 0,          // start invisible
-    scale: 0.95,         // slight zoom effect
-    duration: 1,
-    ease: "power3.out",
-    scrollTrigger: {
-      trigger: img,      // trigger when the image enters viewport
-      start: "top 80%",  // 80% down from top of viewport
-      toggleActions: "play none none reverse", // plays when scrolling down, reverses when scrolling back
-    }
-  });
-});
 
 // Animate the email letters when footer comes into view
 const email = $(".email");
