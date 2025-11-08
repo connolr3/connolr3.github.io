@@ -33,15 +33,18 @@
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="js/gsap-scroll.js"></script>
-  <script src="js/mobile-nav.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/ScrollTrigger.min.js"></script>
 </head>
 
 <body>
-
+<!--loader image gif from https://icons8.com/preloaders/-->
 
 <div class="loader-wrapper">
   <div class="loader">
+<img class="loadgif" src="gif/1476.gif">
+<div>
+<p>firing on all cylinders...</p>
+</div>
 
   </div>
 </div>
@@ -144,7 +147,7 @@
     </div>
     <div class="projects-div section">
       <h1>Recent Projects</h1>
-      <div class="project ">
+      <div class="homeproject">
         <div class="projectimage">
           <div class="image-wrapper retroverse">
             <img loading="eager" src="img/retroverse.JPG" class="breathe circularimage">
@@ -180,20 +183,27 @@
             </ul>
             </p>
           </div>
-
-       <div class="titlecards">
+<div class="titlecards">
+    <img class="minititlecard " src="img/mush-removebg-preview.png">
+  <img class="minititlecard roundededges" src="img/Retroverse_slogan.jpg">
+             <img class="minititlecard circularsmall" src="img/rendr_crop.jpg">
+</div>
+        
+<!--    <div class="titlecards">
   <img loading="eager" class="minititlecard breathe" src="img/titles/Tetris_TitleCard.png">
   <img loading="eager" class="minititlecard" src="img/titles/Pacman_TitleCard.png">
   <img loading="eager" class="minititlecard" src="img/titles/Mario_TitleCard.png">
 </div>
 
+          -->
+   
          
          
          
         </div>
 
       </div>
-      <div class="project">
+      <div class="homeproject">
 
         <div class="projectinfo">
           <h2 class="project-title">The Impact of Navigation in Proxemics</h2>
@@ -215,7 +225,7 @@
 
 
 
-      <div class="project vertical">
+      <div class="homeproject vertical">
         <div class="projectvideo">
           <h2 class="project-title ">Immersive Portfolio</h2>
           <div class="videohome">
@@ -347,48 +357,67 @@
     </div>
  <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
 <script>
-$(window).on("load", function() {
-  // Grab all image elements
-  var $images = $("img");
-  var totalImages = $images.length;
-  var loadedCount = 0;
+$(document).ready(function() {
+  const MIN_LOADER_TIME = 2000; // 2 seconds
+  const startTime = Date.now();
 
-  if (totalImages === 0) {
-    fadeLoader();
+  let domLoaded = false;
+  let mediaLoaded = false;
+
+  // Step 1: DOM ready
+  domLoaded = true;
+
+  // Step 2: Wait for all images and videos
+  const $images = $("img");
+  const $videos = $("video");
+  const totalMedia = $images.length + $videos.length;
+  let loadedCount = 0;
+
+  if (totalMedia === 0) {
+    mediaLoaded = true;
+    checkLoader();
     return;
   }
 
-  $images.each(function() {
-    // Create a new image object for each
-    var img = new Image();
-
-    img.onload = img.onerror = function() {
-      loadedCount++;
-      if (loadedCount === totalImages) {
-        allImagesLoaded();
-      }
-    };
-
-    // Important: assign src *after* binding the handlers
-    img.src = $(this).attr("src");
-
-    // Handle already cached images
-    if (img.complete) {
-      img.onload();
+  function mediaLoadedCallback() {
+    loadedCount++;
+    if (loadedCount === totalMedia) {
+      mediaLoaded = true;
+      checkLoader();
     }
-  });
-
-  function allImagesLoaded() {
-    console.log("✅ ALL IMAGES LOADED");
-    fadeLoader();
   }
 
-  function fadeLoader() {
-    $(".loader-wrapper").fadeOut("slow");
-    $("body").css("overflow-y", "scroll");
+  // Images
+  $images.each(function() {
+    const img = new Image();
+    img.onload = img.onerror = mediaLoadedCallback;
+    img.src = $(this).attr("src");
+    if (img.complete) img.onload();
+  });
+
+  // Videos
+  $videos.each(function() {
+    $(this).on("loadeddata error", mediaLoadedCallback);
+    if (this.readyState >= 2) mediaLoadedCallback();
+  });
+
+  // Step 3: fade loader after both media + DOM ready AND min time passed
+  function checkLoader() {
+    if (domLoaded && mediaLoaded) {
+      const elapsed = Date.now() - startTime;
+      const remaining = Math.max(MIN_LOADER_TIME - elapsed, 0);
+
+      setTimeout(() => {
+        $(".loader-wrapper").fadeOut("slow");
+        $("body").css("overflow-y", "scroll");
+        console.log(" Page fully loaded, loader hidden");
+      }, remaining);
+    }
   }
 });
 </script>
+
+
 
 </body>
 

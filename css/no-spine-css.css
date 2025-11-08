@@ -26,6 +26,12 @@ body{
     z-index: -100000;
 }
 
+.homeproject{
+  display: flex;
+  row-gap: 1em;
+    flex-wrap: wrap; /*  allow items to move to next line */
+}
+
 .big {
     width: 30em;
 }
@@ -195,7 +201,20 @@ table:hover{
   z-index: 10000000;
   left: 0;
   top: 0;
+
 }
+.loader-wrapper p{
+  text-align: center;
+  color: var(--feature-color3);
+}
+.loader, .loader-wrapper{
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
 .coverimage {
     object-fit: contain;
     max-height: 90%;
@@ -809,6 +828,16 @@ color: #1d1717;
 
 }
 
+
+.circularsmall{
+    border-radius: 100%;
+
+}
+
+.roundededges{
+   border-radius: 20px;
+}
+
 .smallerfeature{
       width: 10vw;
   height: 10vw;
@@ -822,7 +851,7 @@ color: #1d1717;
   align-items: top;
 }
 
-.project {
+.homeproject {
   margin-bottom: 50px;
   padding: 20px;
   background-color: #1b1b1b9a;
@@ -830,11 +859,7 @@ color: #1d1717;
   padding: 20px;
 
 }
-.project{
-  display: flex;
-  row-gap: 1em;
-    flex-wrap: wrap; /*  allow items to move to next line */
-}
+
 .projectimage {
   width: 20vw;
   min-width: 250px;
@@ -1106,7 +1131,8 @@ h4{
 }
 
 .minititlecard {
-  height: 13vh;
+  max-height: 20vw;
+  max-height: 20vh;
   max-width: 100%;
   object-fit: contain;
   flex: 0 1 auto; /* ✅ let it shrink if needed */

@@ -136,7 +136,11 @@
   opacity: 1;
   pointer-events: auto;
 }
-
+.project{
+  display: flex;
+  row-gap: 1em;
+    flex-wrap: wrap; /*  allow items to move to next line */
+}
 /* Mobile responsiveness */
 @media (max-width: 768px) {
   .project-div.expanded {

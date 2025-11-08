@@ -63,34 +63,7 @@ $(".coltable").hover(
 );
 
 
-/*
-gsap.to(".minititlecard", {
-  opacity: 1,
-  scale: 1,
-  y: 0, // final position
-  duration: 1.2,
-  ease: "power3.out", // smoother, less bouncy
-  stagger: {
-    amount: 0.6, // total stagger time (smoother than fixed delay)
-    from: "start"
-  },
-  scrollTrigger: {
-    trigger: ".titlecards",
-    start: "top 80%", // starts a bit later (more natural)
-    end: "bottom 60%", // optional, for longer scroll play
-    toggleActions: "play none none reverse",
-    scrub: 0.5, // smooth scroll-linked animation
-    markers: true // remove when done
-  },
-  // start state for better reveal effect
-  from: {
-    opacity: 0,
-    scale: 0.95,
-    y: 40
-  }
-});
 
-*/
 
 
    // Animate the education column (from left)
