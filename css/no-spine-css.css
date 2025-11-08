@@ -29,6 +29,12 @@ body{
 .big {
     width: 30em;
 }
+/* Ensure first project is visible immediately */
+.projects-div .project:first-child .projectinfo,
+.projects-div .project:first-child .projectimage {
+  opacity: 1 !important;
+  transform: none !important;
+}
 
 .role{
   padding-bottom: 1.2em;

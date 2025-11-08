@@ -128,7 +128,7 @@ gsap.to(".minititlecard", {
     scrollTrigger: {
       trigger: ".background-div",
       start: "top 80%",
-      toggleActions: "play none none reverse",
+     scrub: true, // animation tied to scroll
       markers: true
     }
   });
@@ -161,33 +161,53 @@ gsap.from(".roles .role", {
 
 
 
+gsap.utils.toArray(".projectimage img").forEach((img) => {
+  gsap.from(img, {
+    y: 50,              // start 50px below
+    opacity: 0,          // start invisible
+    scale: 0.95,         // slight zoom effect
+    duration: 1,
+    ease: "power3.out",
+    scrollTrigger: {
+      trigger: img,      // trigger when the image enters viewport
+      start: "top 80%",  // 80% down from top of viewport
+      toggleActions: "play none none reverse", // plays when scrolling down, reverses when scrolling back
+    }
+  });
+});
+
+// Animate the email letters when footer comes into view
 const email = $(".email");
-  const letters = email.text().split("");
-  email.html(letters.map(c => `<span>${c}</span>`).join(""));
+const letters = email.text().split("");
+email.html(letters.map(c => `<span>${c}</span>`).join(""));
 
-  gsap.from(".email span", {
-    y: 10,
-    opacity: 0,
-    stagger: 0.05,
-    ease: "back.out(1.7)",
-    duration: 0.6,
-    scrollTrigger: {
-      trigger: ".email",
-      start: "top 80%", // when email enters viewport
-    }
-  });
+gsap.from(".email span", {
+  scrollTrigger: {
+    trigger: ".footerinfo",  // parent container works on mobile
+    start: "top 80%",
+    toggleActions: "play none none reverse" // optional
+  },
+  y: 10,
+  opacity: 0,
+  stagger: 0.05,
+  duration: 0.6,
+  ease: "back.out(1.7)"
+});
 
-  gsap.to(".email span", {
-    rotationY: 360,
-    duration: 2,
-    repeat: 0, // two total spins
-    ease: "none",
-    stagger: { each: 0.1, from: "center" },
-    scrollTrigger: {
-      trigger: ".email",
-      start: "top 80%"
-    }
-  });
+// Optional: spin each letter twice
+gsap.to(".email span", {
+  scrollTrigger: {
+    trigger: ".footerinfo",
+    start: "top 80%",
+    toggleActions: "play none none reverse"
+  },
+  rotationY: 360,
+  repeat: 1, // two spins total
+  duration: 4,
+  ease: "none",
+  stagger: { each: 0.1, from: "center" }
+});
+
 
 
 });
