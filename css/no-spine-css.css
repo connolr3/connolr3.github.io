@@ -15,6 +15,18 @@ body{
 .pre-footer {
     height: 20%;
 }
+.item{
+  max-width: 35%;
+  max-width: 25%;
+}
+
+.biggermages{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
 
 .covervideo {
     position: absolute;
@@ -960,6 +972,14 @@ color: #1d1717;
   .abstract{
     font-size: 10px !important;
   }
+.item{
+  max-width: 55% !important;
+  max-height: 55% !important;
+}
+
+.biggermages{
+  row-gap: 1em;
+}
 
   body::-webkit-scrollbar {
   width: 10px;               /* width of the entire scrollbar */
@@ -1122,8 +1142,9 @@ h4{
 
 .titlecards {
   display: flex;
-  flex-wrap: wrap; /* ✅ allows wrapping to next line */
+  flex-wrap: nowrap; /* ✅ allows wrapping to next line */
   justify-content: flex-start;
+  align-items: center;
   width: 100%; /* make sure it fits its parent */
   max-width: 100%;
   overflow: hidden; /* prevent visual overflow */
@@ -1131,9 +1152,8 @@ h4{
 }
 
 .minititlecard {
-  max-height: 20vw;
-  max-height: 20vh;
-  max-width: 100%;
+  max-height: 20%;
+  max-width: 20%;
   object-fit: contain;
   flex: 0 1 auto; /* ✅ let it shrink if needed */
     opacity: 1;
@@ -1225,11 +1245,19 @@ h4{
   background-color: #000000;
   color: white;
 }
-  .titlecards {
-    justify-content: center;
-    gap: 1em;
-  }
 
+.biggerimages{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.item{
+  max-width: 20%;
+    max-height: 20%;
+}
   .minititlecard {
     height: 10vh; /* smaller on mobile */
   }
