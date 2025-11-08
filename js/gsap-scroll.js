@@ -12,7 +12,7 @@ $(document).ready(function () {
       start: "top 80%",
       end: "bottom 20%",
       toggleActions: "play none none reverse",
-      markers: true
+      markers: false
     },
     onComplete: function () {
       // Smoothly reset to normal
@@ -98,7 +98,7 @@ gsap.utils.toArray(".titlecards").forEach((container) => {
       trigger: ".background-div",
       start: "top 80%",     // when section enters viewport
       toggleActions: "play none none reverse",
-      markers: true         // remove after testing
+      markers: false         // remove after testing
     }
   });
 
@@ -112,7 +112,7 @@ gsap.utils.toArray(".titlecards").forEach((container) => {
       trigger: ".table",
       start: "top 80%",
       toggleActions: "play none none reverse",
-      markers: true // remove later
+      markers: false // remove later
     }
   });
 
@@ -125,7 +125,7 @@ gsap.utils.toArray(".titlecards").forEach((container) => {
       trigger: ".background-div",
       start: "top 80%",
       toggleActions: "play none none reverse",
-      markers: true
+      markers: false
     }
   });
   // Education roles
