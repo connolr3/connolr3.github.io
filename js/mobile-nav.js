@@ -7,8 +7,10 @@ function myFunction() {
   var x = document.getElementById("myLinks");
   if (x.style.display === "block") {
     x.style.display = "none";
+      console.log("setting to nne");
   } else {
     x.style.display = "block";
+      console.log("setting to block");
   }
 }
 
