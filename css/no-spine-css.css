@@ -168,13 +168,13 @@ body {
 
 .coltable:hover {
   transform: scale(1.1) !important;
-  background-color: red !important;
+  background-color: rgb(17, 17, 17) !important;
   color: white !important;
 }
 
 table:hover{
     transform: scale(1.1) !important;
-  background-color: red !important;
+  background-color: rgba(44, 5, 5, 0.315) !important;
   color: white !important;
 }
 
