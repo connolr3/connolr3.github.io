@@ -41,7 +41,11 @@
 </head>
 
 <body>
+<div class="loader-wrapper">
+  <div class="loader">
 
+  </div>
+</div>
 <div class="nav_container large">
 
     <div class="socials ">
@@ -128,7 +132,50 @@
 
     <!--link to js-->
     <script src="./js/publications.js"></script>
+ <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+<script>
+$(window).on("load", function() {
+  // Grab all image elements
+  var $images = $("img");
+  var totalImages = $images.length;
+  var loadedCount = 0;
 
+  if (totalImages === 0) {
+    fadeLoader();
+    return;
+  }
+
+  $images.each(function() {
+    // Create a new image object for each
+    var img = new Image();
+
+    img.onload = img.onerror = function() {
+      loadedCount++;
+      if (loadedCount === totalImages) {
+        allImagesLoaded();
+      }
+    };
+
+    // Important: assign src *after* binding the handlers
+    img.src = $(this).attr("src");
+
+    // Handle already cached images
+    if (img.complete) {
+      img.onload();
+    }
+  });
+
+  function allImagesLoaded() {
+    console.log("✅ ALL IMAGES LOADED");
+    fadeLoader();
+  }
+
+  function fadeLoader() {
+    $(".loader-wrapper").fadeOut("slow");
+    $("body").css("overflow-y", "scroll");
+  }
+});
+</script>
 </body>
 
 </html>

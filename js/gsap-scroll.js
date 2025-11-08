@@ -46,7 +46,7 @@ gsap.from(".footerinfo", {
     end: "bottom 20%",
     scrub: true // smooth reverse/forward tied to scroll
   },
-  y: 60,
+  y: 160,
   opacity: 0,
   duration: 1.5,
   ease: "power3.out"
@@ -158,6 +158,36 @@ gsap.from(".roles .role", {
     toggleActions: "play none none reverse"
   }
 });
+
+
+
+const email = $(".email");
+  const letters = email.text().split("");
+  email.html(letters.map(c => `<span>${c}</span>`).join(""));
+
+  gsap.from(".email span", {
+    y: 10,
+    opacity: 0,
+    stagger: 0.05,
+    ease: "back.out(1.7)",
+    duration: 0.6,
+    scrollTrigger: {
+      trigger: ".email",
+      start: "top 80%", // when email enters viewport
+    }
+  });
+
+  gsap.to(".email span", {
+    rotationY: 360,
+    duration: 2,
+    repeat: 0, // two total spins
+    ease: "none",
+    stagger: { each: 0.1, from: "center" },
+    scrollTrigger: {
+      trigger: ".email",
+      start: "top 80%"
+    }
+  });
 
 
 });

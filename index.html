@@ -39,6 +39,12 @@
 
 <body>
 
+
+<div class="loader-wrapper">
+  <div class="loader">
+
+  </div>
+</div>
   <div class="nav_container large">
 
     <div class="socials ">
@@ -176,11 +182,15 @@
             </p>
           </div>
 
-          <div class="titlecards">
-            <img class="minititlecard breathe  " src="img/titles/Tetris_TitleCard.png">
-            <img class="minititlecard" src="img/titles/Pacman_TitleCard.png">
-            <img class="minititlecard" src="img/titles/Mario_TitleCard.png">
-          </div>
+       <div class="titlecards">
+  <img loading="eager" class="minititlecard breathe" src="img/titles/Tetris_TitleCard.png">
+  <img loading="eager" class="minititlecard" src="img/titles/Pacman_TitleCard.png">
+  <img loading="eager" class="minititlecard" src="img/titles/Mario_TitleCard.png">
+</div>
+
+         
+         
+         
         </div>
 
       </div>
@@ -330,12 +340,56 @@
 
     <div class="section">
       <div class="footerinfo">
-        <h2>connolr3@tcd.ie</h2>
+        <h2 class="email">connolr3@tcd.ie</h2>
         <div class="underline"></div>
         <p>Developed with JQuery & GSAP libraries, hosted on Github.io.</p>
       </div>
 
     </div>
+ <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+<script>
+$(window).on("load", function() {
+  // Grab all image elements
+  var $images = $("img");
+  var totalImages = $images.length;
+  var loadedCount = 0;
+
+  if (totalImages === 0) {
+    fadeLoader();
+    return;
+  }
+
+  $images.each(function() {
+    // Create a new image object for each
+    var img = new Image();
+
+    img.onload = img.onerror = function() {
+      loadedCount++;
+      if (loadedCount === totalImages) {
+        allImagesLoaded();
+      }
+    };
+
+    // Important: assign src *after* binding the handlers
+    img.src = $(this).attr("src");
+
+    // Handle already cached images
+    if (img.complete) {
+      img.onload();
+    }
+  });
+
+  function allImagesLoaded() {
+    console.log("✅ ALL IMAGES LOADED");
+    fadeLoader();
+  }
+
+  function fadeLoader() {
+    $(".loader-wrapper").fadeOut("slow");
+    $("body").css("overflow-y", "scroll");
+  }
+});
+</script>
 
 </body>
 
