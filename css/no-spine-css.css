@@ -196,13 +196,13 @@ body {
 
 .coltable:hover {
   transform: scale(1.1) !important;
-  background-color: rgb(17, 17, 17) !important;
+  background-color: #160000;
   color: white !important;
 }
 
 table:hover{
     transform: scale(1.1) !important;
-  background-color: rgba(44, 5, 5, 0.315) !important;
+  background-color:  #160000 !important;
   color: white !important;
 }
 
@@ -657,12 +657,6 @@ h1 {
     transform: scale(1.05);
 }
 
-testhover:hover{
-      transition: opacity 1.7s ease, transform 1.3s ease;
-    transform: scale(1.05);
-  background-color: red;
-  color: #00a305;
-}
 
 .container-backwards-50 {
     left: -100vw;
