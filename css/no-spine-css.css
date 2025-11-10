@@ -215,9 +215,15 @@ table:hover{
   top: 0;
 
 }
+
+
 .loader-wrapper p{
   text-align: center;
   color: var(--feature-color3);
+  font-size: 30px;
+}
+.loadgif{
+  min-height: 300px;
 }
 .loader, .loader-wrapper{
   display: flex;
@@ -239,6 +245,8 @@ img {
     max-width: 90%;
     max-height: 80%;
 }
+
+
 
 .largeimage {
     max-width: 90%;
@@ -977,6 +985,13 @@ color: #1d1717;
   max-height: 55% !important;
 }
 
+.loader-wrapper p{
+  font-size: 20px;
+}
+.loadgif{
+  min-height: 200px;
+}
+
 .biggermages{
   row-gap: 1em;
 }
@@ -1179,6 +1194,13 @@ h4{
   position: relative;
   width: 100%;
   z-index: 1300000;
+}
+
+.loader-wrapper p{
+  font-size: 10px;
+}
+.loadgif{
+  min-height: 100px;
 }
 
 .projectvideo {
