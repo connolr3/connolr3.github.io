@@ -33,82 +33,92 @@
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="js/gsap-scroll.js"></script>
-    <script src="js/mobile-nav.js"></script>
+  <script src="js/mobile-nav.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/ScrollTrigger.min.js"></script>
 </head>
 
 <body>
-<!--loader image gif from https://icons8.com/preloaders/-->
+  <!--loader image gif from https://icons8.com/preloaders/-->
 
-<div class="loader-wrapper">
-  <div class="loader">
-<img class="loadgif" src="gif/1476.gif">
-<div>
-<p>firing on all cylinders...</p>
-</div>
-
+<!-- Landmark: main content area -->
+<main role="main">
+  <div 
+    class="loader-wrapper" 
+    role="status" 
+    aria-live="polite" 
+    aria-label="Page loading"
+  >
+    <div class="loader">
+      <img class="loadgif" src="gif/1476.gif" alt="" aria-hidden="true">
+      <p>Firing on all cylinders...</p>
+    </div>
   </div>
-</div>
-  <div class="nav_container large">
+</main>
+
+  <nav class="nav_container large">
 
     <div class="socials ">
 
-      <a href="index.html#home"> <img src="img/ROSE.IE PROFILE.png " style="border-radius: 100%; "></a>
-      <a target="_blank" class="bigscreenonly" href="https://www.youtube.com/@rose.ie-portfolio "><i class='bx bxl-youtube'></i></a>
-      <a target="_blank" class="bigscreenonly" href="https://www.linkedin.com/in/rosieconnolly/ "><i
-          class='bx bxl-linkedin-square'></i></a>
-      <a target="_blank" class="bigscreenonly" href="https://github.com/connolr3 "><i class='bx bxl-github'></i></a>
-
-    </div>
-    <div class="links ">
-      <a href="index.html" class="nav_item nav_active nav1 ">HOME</a>
-      <a href="projects.html" class="nav_item nav3 ">PROJECTS</a>
-      <a href="pub.html" class="nav_item nav3 ">PUBLICATIONS</a>
-
-    </div>
-
-
-  </div>
-
-  <div class="nav_container middle ">
-
-    <div class="socials ">
-
-      <a href="index.html#home"> <img src="img/ROSE.IE PROFILE.png " style="border-radius: 100%; "></a>
-
-    </div>
-    <div class="links ">
-      <a href="index.html" class="nav_item nav_active nav1 ">HOME</a>
-      <a href="projects.html" class="nav_item nav3 ">PROJECTS</a>
-      <a href="pub.html" class="nav_item nav3 ">PUBLICATIONS</a>
-
-    </div>
-
-
-  </div>
-<div class="fixed">
- <div class="small ">
-
-    <!-- Top Navigation Menu -->
-    <div class="topnav">
-      <a href="#home" class="active"><img src="img/ROSE.IE PROFILE.png " class="logo icon"
+      <a href="index.html#home"> <img alt="link to top of page" src="img/ROSE.IE PROFILE.png "
           style="border-radius: 100%; "></a>
-      <div id="myLinks">
-        <a href="index.html" class="nav_item nav_active nav1 ">HOME</a>
-        <a href="projects.html" class="nav_item nav3 ">PROJECTS</a>
-        <a href="pub.html" class="nav_item nav3 ">PUBLICATIONS</a>
-      </div>
-      <a href="javascript:void(0);" class="icon" id="triggernav">
+      <a aria-label="Visit my Youtube profile (opens in a new tab)" target="_blank" class="bigscreenonly"
+        href="https://www.youtube.com/@rose.ie-portfolio "><i class='bx bxl-youtube'></i></a>
+      <a aria-label="Visit my LinkedIn profile (opens in a new tab)" target="_blank" class="bigscreenonly"
+        href="https://www.linkedin.com/in/rosieconnolly/ "><i class='bx bxl-linkedin-square'></i></a>
+      <a aria-label="Visit my Github profile (opens in a new tab)" target="_blank" class="bigscreenonly"
+        href="https://github.com/connolr3 "><i class='bx bxl-github'></i></a>
 
-        <i class='bx bx-menu'></i>
-      </a>
+    </div>
+    <div class="links ">
+      <a href="index.html" class="nav_item nav_active nav1 ">HOME</a>
+      <a href="projects.html" class="nav_item nav3 ">PROJECTS</a>
+      <a href="pub.html" class="nav_item nav3 ">PUBLICATIONS</a>
 
     </div>
 
 
-  </div>
-</div>
- 
+  </nav>
+
+  <nav class="nav_container middle ">
+
+    <div class="socials ">
+
+      <a href="index.html#home"> <img src="img/ROSE.IE PROFILE.png " alt="link to top of page"
+          style="border-radius: 100%; "></a>
+
+    </div>
+    <div class="links ">
+      <a href="index.html" class="nav_item nav_active nav1 ">HOME</a>
+      <a href="projects.html" class="nav_item nav3 ">PROJECTS</a>
+      <a href="pub.html" class="nav_item nav3 ">PUBLICATIONS</a>
+
+    </div>
+
+
+  </nav>
+  <nav class="fixed">
+    <div class="small ">
+
+      <!-- Top Navigation Menu -->
+      <div class="topnav">
+        <a href="#home" class="active"><img alt="link to top of page" src="img/ROSE.IE PROFILE.png " class="logo icon"
+            style="border-radius: 100%; "></a>
+        <div id="myLinks">
+          <a href="index.html" class="nav_item nav_active nav1 ">HOME</a>
+          <a href="projects.html" class="nav_item nav3 ">PROJECTS</a>
+          <a href="pub.html" class="nav_item nav3 ">PUBLICATIONS</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" id="triggernav">
+
+          <i class='bx bx-menu'></i>
+        </a>
+
+      </div>
+
+
+    </div>
+  </nav>
+
 
   <video id="home" class="covervideo" loop controls autoplay muted playsinline>
     <source src="img/1.mp4" type="video/mp4">
@@ -123,7 +133,7 @@
 
     <div class="introdiv section">
       <div class="picture">
-        <img src="img/IMG_5422 copy.JPG" class="coverimage breathe ">
+        <img src="img/IMG_5422 copy.JPG" alt="profile photo of Rosie." class="coverimage breathe ">
 
 
       </div>
@@ -132,7 +142,7 @@
         <h1>Rosie Connolly</h1>
         <p>I'm a VR researcher interested in all forms of creative technology!</p>
         <p>
-         My current research areas include virtual navigation, social proxemics and perception of AI-driven agents.
+          My current research areas include virtual navigation, social proxemics and perception of AI-driven agents.
         </p>
 
         <div class="intro-line"> <a href="https://www.youtube.com/@rose.ie-portfolio "><i class='bx  bx-home'></i> </a>
@@ -151,7 +161,8 @@
       <div class="homeproject">
         <div class="projectimage">
           <div class="image-wrapper retroverse">
-            <img loading="eager" src="img/retroverse.JPG" class="breathe circularimage">
+            <img loading="eager" alt="Retroverse team members at exhibition" src="img/retroverse.JPG"
+              class="breathe circularimage">
           </div>
           <h4 class="project-title featurecolor1 middle-align">
             Created by Rose Connolly, Marcia Marques, Vasiliki Karathansi, Brad Lee and Audrey Kurniawan
@@ -184,31 +195,32 @@
             </ul>
             </p>
           </div>
-<div class="biggermages">
-  <img class="item roundededges" src="img/Retroverse_slogan.jpg">
-             <img class="item circularsmall" src="img/rendr_crop.jpg">
-</div>
+          <div class="biggermages">
+            <img class="item roundededges" alt="Rwetroverse Logo" src="img/Retroverse_slogan.jpg">
+            <img class="item circularsmall" alt="Man trying Retroverse game exclaiming with joy"
+              src="img/rendr_crop.jpg">
+          </div>
 
-<div class="titlecards">
-    <img class="minititlecard " src="img/mush-removebg-preview.png">
-     <img class="minititlecard " src="img/space2-removebg-preview.png">
-  <img class="minititlecard " src="img/mark-removebg-preview.png">
-    <img class="minititlecard " src="img/teris-removebg-preview.png">
-      <img class="minititlecard " src="img/space-removebg-preview.png">
-       
-</div>
-        
-<!--    <div class="titlecards">
+          <div class="titlecards">
+            <img class="minititlecard " alt="" src="img/mush-removebg-preview.png">
+            <img class="minititlecard " alt="" src="img/space2-removebg-preview.png">
+            <img class="minititlecard " alt="" src="img/mark-removebg-preview.png">
+            <img class="minititlecard " alt="" src="img/teris-removebg-preview.png">
+            <img class="minititlecard " alt="" src="img/space-removebg-preview.png">
+
+          </div>
+
+          <!--    <div class="titlecards">
   <img loading="eager" class="minititlecard breathe" src="img/titles/Tetris_TitleCard.png">
   <img loading="eager" class="minititlecard" src="img/titles/Pacman_TitleCard.png">
   <img loading="eager" class="minititlecard" src="img/titles/Mario_TitleCard.png">
 </div>
 
           -->
-   
-         
-         
-         
+
+
+
+
         </div>
 
       </div>
@@ -226,7 +238,7 @@
         </div>
         <div class="projectimage">
           <div class="image-wrapper">
-            <img loading="eager" src="img/ai-cropped.png" class="breathe circularimage">
+            <img loading="eager" alt="" src="img/ai-cropped.png" class="breathe circularimage">
           </div>
         </div>
 
@@ -364,67 +376,69 @@
       </div>
 
     </div>
- <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
-<script>
-$(document).ready(function() {
-  const MIN_LOADER_TIME = 2000; // 2 seconds
-  const startTime = Date.now();
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        const MIN_LOADER_TIME = 2000; // 2 seconds
+        const startTime = Date.now();
 
-  let domLoaded = false;
-  let mediaLoaded = false;
+        let domLoaded = false;
+        let mediaLoaded = false;
 
-  // Step 1: DOM ready
-  domLoaded = true;
+        // Step 1: DOM ready
+        domLoaded = true;
 
-  // Step 2: Wait for all images and videos
-  const $images = $("img");
-  const $videos = $("video");
-  const totalMedia = $images.length + $videos.length;
-  let loadedCount = 0;
+        // Step 2: Wait for all images and videos
+        const $images = $("img");
+        const $videos = $("video");
+        const totalMedia = $images.length + $videos.length;
+        let loadedCount = 0;
 
-  if (totalMedia === 0) {
-    mediaLoaded = true;
-    checkLoader();
-    return;
-  }
+        if (totalMedia === 0) {
+          mediaLoaded = true;
+          checkLoader();
+          return;
+        }
 
-  function mediaLoadedCallback() {
-    loadedCount++;
-    if (loadedCount === totalMedia) {
-      mediaLoaded = true;
-      checkLoader();
-    }
-  }
+        function mediaLoadedCallback() {
+          loadedCount++;
+          if (loadedCount === totalMedia) {
+            mediaLoaded = true;
+            checkLoader();
+          }
+        }
 
-  // Images
-  $images.each(function() {
-    const img = new Image();
-    img.onload = img.onerror = mediaLoadedCallback;
-    img.src = $(this).attr("src");
-    if (img.complete) img.onload();
-  });
+        // Images
+        $images.each(function () {
+          const img = new Image();
+          img.onload = img.onerror = mediaLoadedCallback;
+          img.src = $(this).attr("src");
+          if (img.complete) img.onload();
+        });
 
-  // Videos
-  $videos.each(function() {
-    $(this).on("loadeddata error", mediaLoadedCallback);
-    if (this.readyState >= 2) mediaLoadedCallback();
-  });
+        // Videos
+        $videos.each(function () {
+          $(this).on("loadeddata error", mediaLoadedCallback);
+          if (this.readyState >= 2) mediaLoadedCallback();
+        });
 
-  // Step 3: fade loader after both media + DOM ready AND min time passed
-  function checkLoader() {
-    if (domLoaded && mediaLoaded) {
-      const elapsed = Date.now() - startTime;
-      const remaining = Math.max(MIN_LOADER_TIME - elapsed, 0);
+        // Step 3: fade loader after both media + DOM ready AND min time passed
+        function checkLoader() {
+          if (domLoaded && mediaLoaded) {
+            const elapsed = Date.now() - startTime;
+            const remaining = Math.max(MIN_LOADER_TIME - elapsed, 0);
 
-      setTimeout(() => {
-        $(".loader-wrapper").fadeOut("slow");
-        $("body").css("overflow-y", "scroll");
-        console.log(" Page fully loaded, loader hidden");
-      }, remaining);
-    }
-  }
-});
-</script>
+            setTimeout(() => {
+              $(".loader-wrapper").fadeOut("slow");
+              $("body").css("overflow-y", "scroll");
+              document.querySelector('.loader-wrapper').setAttribute('aria-hidden', 'true');
+
+              console.log(" Page fully loaded, loader hidden");
+            }, remaining);
+          }
+        }
+      });
+    </script>
 
 
 
