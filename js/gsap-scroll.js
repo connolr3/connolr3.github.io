@@ -78,8 +78,8 @@ gsap.utils.toArray(".titlecards").forEach((container) => {
       ease: "power2.out",
       scrollTrigger: {
         trigger: container,
-        start: "top 80%",
-        end: "bottom 20%",
+        start: "top 90%",
+        end: "bottom 10%",
         toggleActions: "play reverse play reverse", // plays when entering, reverses when leaving
         markers: false
       }
