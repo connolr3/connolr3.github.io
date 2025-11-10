@@ -41,6 +41,8 @@ body{
 .homeproject{
   display: flex;
   row-gap: 1em;
+  align-items: center;
+  justify-content: center;
     flex-wrap: wrap; /*  allow items to move to next line */
 }
 
