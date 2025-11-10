@@ -1197,7 +1197,9 @@ h4{
   width: 100%;
   z-index: 1300000;
 }
-
+.skills h2{
+  font-size: 1.2rem;
+}
 .loader-wrapper p{
   font-size: 10px;
 }
