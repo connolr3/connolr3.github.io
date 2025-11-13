@@ -158,24 +158,12 @@ gsap.from(".roles .role", {
 
 
 // Animate the email letters when footer comes into view
+// Split email text into spans for each letter
 const email = $(".email");
 const letters = email.text().split("");
 email.html(letters.map(c => `<span>${c}</span>`).join(""));
 
-gsap.from(".email span", {
-  scrollTrigger: {
-    trigger: ".footerinfo",  // parent container works on mobile
-    start: "top 80%",
-    toggleActions: "play none none reverse" // optional
-  },
-  y: 10,
-  opacity: 0,
-  stagger: 0.05,
-  duration: 0.6,
-  ease: "back.out(1.7)"
-});
-
-// Optional: spin each letter twice
+// Spin animation only (no opacity or y movement)
 gsap.to(".email span", {
   scrollTrigger: {
     trigger: ".footerinfo",
@@ -183,11 +171,12 @@ gsap.to(".email span", {
     toggleActions: "play none none reverse"
   },
   rotationY: 360,
-  repeat: 1, // two spins total
-  duration: 4,
+  repeat: 1, // two spins total (one repeat)
+  duration: 3,
   ease: "none",
   stagger: { each: 0.1, from: "center" }
 });
+
 
 
 
