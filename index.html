@@ -34,6 +34,7 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="js/gsap-scroll.js"></script>
   <script src="js/mobile-nav.js"></script>
+    <script src="js/videoplayback.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/ScrollTrigger.min.js"></script>
 </head>
 
@@ -124,10 +125,13 @@
 
 
     <video id="home" class="covervideo" loop controls autoplay muted playsinline>
-      <source src="img/1.mp4" type="video/mp4">
+      <source src="img/1.mp4"  id="covervideo" type="video/mp4">
       Your browser does not support the video tag.
     </video>
 
+ <div class="coverimage covervideo">
+  <img src="img/ai-cropped.png" id="coverimage" alt="" style="display:none;">
+ </div>
     <div class="introdiv section">
       <div class="picture">
         <img src="img/IMG_5422 copy.JPG" alt="profile photo of Rosie." class="coverimage breathe ">
