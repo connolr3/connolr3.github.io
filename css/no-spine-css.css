@@ -233,7 +233,7 @@ table:hover{
 .loader-wrapper p{
   text-align: center;
   color: var(--feature-color4);
-  font-size: 30px;
+  font-size: 20px;
 }
 .loadgif{
   max-height: 300px;
