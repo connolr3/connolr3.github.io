@@ -13,6 +13,7 @@
 }
 body{
   width: 100%;
+  overflow-x: hidden;
 }
 .pre-footer {
     height: 20%;
