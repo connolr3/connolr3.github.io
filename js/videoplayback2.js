@@ -2,7 +2,7 @@
  $(document).ready(function() {
     console.log("ready");
   // Create the video element and append it to the body
-  var video = $('<video class="loop" muted playsinline loop autoplay>');
+  var video = $('<video class="covervideo loop" muted playsinline loop autoplay>');
   video.append('<source src="img/1.mp4" type="video/mp4">'); 
   //$('.body-bg-img').prepend('<div class="video-bg"></div>');
   $('.videobg').append(video);
