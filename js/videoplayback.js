@@ -1,6 +1,8 @@
-document.addEventListener('DOMContentLoaded', () => {
+
+ $(document).ready(function() {
   const video = document.getElementById("covervideo");
   const fallbackImage = document.getElementById("coverimage");
+  
 
   function showFallback() {
     video.style.display = "none";
@@ -22,4 +24,4 @@ document.addEventListener('DOMContentLoaded', () => {
       showFallback();
     }
   });
-});
+ });
