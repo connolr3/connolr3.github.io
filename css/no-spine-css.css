@@ -13,6 +13,9 @@
 }
 body{
   width: 100%;
+}
+
+html, body {
   overflow-x: hidden;
 }
 .pre-footer {
@@ -88,6 +91,10 @@ body{
 
 .background-colour {
     background-color: var(--body-color);
+}
+.background-div{
+    overflow: hidden;
+  position: relative;
 }
 
 body {
