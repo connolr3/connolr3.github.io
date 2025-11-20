@@ -34,7 +34,7 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="js/gsap-scroll.js"></script>
   <script src="js/mobile-nav.js"></script>
-    <script src="js/videoplayback.js"></script>
+        <script src="js/videoplayback2.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/ScrollTrigger.min.js"></script>
 </head>
 
@@ -124,10 +124,7 @@
   <main>
 
 <div class="videobg">
-<video id="covervideo" class="covervideo" loop controls autoplay muted playsinline>
-  <source src="img/1.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+
 </div>
 
 
@@ -395,68 +392,7 @@
 
 
   <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
-  <script>
-    $(document).ready(function () {
-      const MIN_LOADER_TIME = 2000; // 2 seconds
-      const startTime = Date.now();
-
-      let domLoaded = false;
-      let mediaLoaded = false;
-
-      // Step 1: DOM ready
-      domLoaded = true;
-
-      // Step 2: Wait for all images and videos
-      const $images = $("img");
-      const $videos = $("video");
-      const totalMedia = $images.length + $videos.length;
-      let loadedCount = 0;
-
-      if (totalMedia === 0) {
-        mediaLoaded = true;
-        checkLoader();
-        return;
-      }
-
-      function mediaLoadedCallback() {
-        loadedCount++;
-        if (loadedCount === totalMedia) {
-          mediaLoaded = true;
-          checkLoader();
-        }
-      }
-
-      // Images
-      $images.each(function () {
-        const img = new Image();
-        img.onload = img.onerror = mediaLoadedCallback;
-        img.src = $(this).attr("src");
-        if (img.complete) img.onload();
-      });
-
-      // Videos
-      $videos.each(function () {
-        $(this).on("loadeddata error", mediaLoadedCallback);
-        if (this.readyState >= 2) mediaLoadedCallback();
-      });
-
-      // Step 3: fade loader after both media + DOM ready AND min time passed
-      function checkLoader() {
-        if (domLoaded && mediaLoaded) {
-          const elapsed = Date.now() - startTime;
-          const remaining = Math.max(MIN_LOADER_TIME - elapsed, 0);
-
-          setTimeout(() => {
-            $(".loader-wrapper").fadeOut("slow");
-            $("body").css("overflow-y", "scroll");
-            document.querySelector('.loader-wrapper').setAttribute('aria-hidden', 'true');
-
-            console.log(" Page fully loaded, loader hidden");
-          }, remaining);
-        }
-      }
-    });
-  </script>
+ 
 
 
 
