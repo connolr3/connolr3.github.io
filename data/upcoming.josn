@@ -1,0 +1,12 @@
+  {
+    "id": "connolly2026agency",
+    "type": "conference",
+    "title": "Perceptually-Guided Redirected Teleporting: Perceptual Thresholds for Teleport Displacements in Virtual Environments",
+    "authors": [ "Rose Connolly","Victor Zordan","Rachel McDonnell"],
+"abstract": "Teleportation is one of the most common locomotion techniques in virtual reality, yet its perceptual properties remain underexplored. While redirected walking research has shown that users' movements can be subtly manipulated without detection, similar imperceptible adjustments for teleportation have not been systematically investigated. This study examines the thresholds at which teleportation displacements become noticeable to users. We conducted a repeated-measures experiment in which participants' selected teleport destinations were altered in both direction (forwards, backwards) and at different ranges (small, large). Detection thresholds for these positional adjustments were estimated using a psychophysical staircase method with a two-alternative forced choice (2AFC) task. Results show that teleport destinations can be shifted without detection, with larger tolerances for backward adjustments and across longer teleport ranges. These findings establish baseline perceptual limits for redirected teleportation and highlight its potential as a design technique. Applications include supporting interpersonal distance management in social VR, guiding players toward objectives in games, and assisting novice users with navigation. By identifying the limits of imperceptible teleportation adjustments, this work extends redirection principles beyond walking to teleportation and opens new opportunities for adaptive and socially aware VR locomotion systems.",
+"year": 2026,
+
+  "journal": "IEEE Transactions on Visualization and Computer Graphics",
+    "publisher": "IEEE",
+  "tags": ["ArXIV Preprint"]
+  }

@@ -23,7 +23,9 @@
     padding: 3em;
 }
 
-
+.projects img{
+  border-radius: 10px;
+}
 .activeButton{
     color: var(--feature-color2) !important;
     background-color: var(--feature-color1) !important;
@@ -144,6 +146,10 @@
     min-height: auto;
     flex-direction: column;
   }
+
+  .projects img{
+  border-radius: 5px;
+}
   .project-div {
     width: 95%;
     height: 225px;
