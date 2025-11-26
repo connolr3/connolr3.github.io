@@ -14,7 +14,11 @@
 body{
   width: 100%;
 }
-
+.dates{
+  font-style: italic;
+  color:#05cfb8 ;
+  font-size: 0.9rem;
+}
 html, body {
   overflow-x: hidden;
 }
