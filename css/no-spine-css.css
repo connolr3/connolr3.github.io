@@ -487,17 +487,23 @@ body {
 }
 
 body::-webkit-scrollbar {
-  width: 18px;               /* width of the entire scrollbar */
+  width: 15px;               /* width of the entire scrollbar */
+    padding: 0;
+  margin: 0;
 }
 
 body::-webkit-scrollbar-track {
-  background:  vblack      /* color of the tracking area */
+  background:  none;      /* color of the tracking area */
+  padding: 0;
+  margin: 0;
+
 }
 
 body::-webkit-scrollbar-thumb {
   background-color: var(--feature-color1);    /* color of the scroll thumb */
-  border-radius: 20px;       /* roundness of the scroll thumb */
-  color: white;
+  border-radius: 20px;     /*   roundness of the scroll thumb */
+width: 100%;  
+
 }
 
 .bx{
@@ -999,6 +1005,23 @@ color: #1d1717;
   max-height: 55% !important;
 }
 
+/* Remove custom scrollbar on small screens */
+@media (max-width: 768px) {
+  body::-webkit-scrollbar {
+    width: 0 !important;
+    height: 0 !important;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: transparent !important;
+  }
+
+  body::-webkit-scrollbar-thumb {
+    background: transparent !important;
+  }
+}
+
+
 .loader-wrapper p{
   font-size: 20px;
 }
@@ -1010,12 +1033,11 @@ color: #1d1717;
   row-gap: 1em;
 }
 
-  body::-webkit-scrollbar {
-  width: 10px;               /* width of the entire scrollbar */
-}
 
 
 }
+
+
 @media (max-width: 1200px) {
  .publications-container{
   
@@ -1239,6 +1261,10 @@ h4{
   min-width: 60vw !important;
 }
 
+
+.small{
+  width: 100%;
+}
 .topnav #myLinks {
   display: none;
 }
