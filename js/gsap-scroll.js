@@ -55,7 +55,7 @@ gsap.from(".footerinfo", {
 
 $(".coltable").hover(
   function () {
-    gsap.to(this, { scale: 1.1, backgroundColor: "red", color: "white", duration: 0.3 });
+    gsap.to(this, { scale: 1.1, backgroundColor: "#252525e7;", color: "white", duration: 0.3 });
   },
   function () {
     gsap.to(this, { scale: 1, backgroundColor: "", color: "", duration: 0.3 });
