@@ -14,7 +14,12 @@ $(document).ready(function() {
             data.forEach(function(pub, index) {
                 let html = `
                     <div class="publication-item" style="margin-bottom: 1.5em;">
-                        <div class="title"><strong>${pub.title}</strong></div>
+                     ${pub.link 
+  ? `<a class="publink" href="${pub.link}">${pub.title}</a>` 
+  : `<div class="title"><strong>${pub.title}</strong></div>`
+}
+
+                        
                                   ${pub.tags ? `<div class="pub-tag">${pub.tags}</div>` : ''}
                         <div class="authors">${pub.authors.join(', ')}</div>
 
@@ -29,7 +34,7 @@ $(document).ready(function() {
                         ${pub.conference ? `<div class="conference"><em>${pub.conference}</em></div>` : ''}
                           ${pub.workshop ? `<div class="conference"><em>${pub.workshop}</em></div>` : ''}
                         ${pub.year ? `<div class="year">${pub.year}</div>` : ''}
-                  
+                    
                     </div>
                 `;
 
