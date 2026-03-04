@@ -30,7 +30,8 @@
     "year": 2026,
    "workshop":"IEEE Conference on Virtual Reality & 3D Interfaces",
     "publisher": "IEEE",
-  "tags": ["Upcoming"]
+  "tags": ["Upcoming"],
+  "link":"https://connolr3.github.io/AdjustedTeleportation/"
   },
     {
     "id": "connolly2026dontstand",
