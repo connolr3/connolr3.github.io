@@ -14,6 +14,16 @@
 body{
   width: 100%;
 }
+
+
+.section{
+  margin-top: 1em;
+    min-height: 80vh;
+    min-width: 50vw;
+}
+
+
+
 .dates{
   font-style: italic;
   color:#05cfb8 ;
@@ -87,7 +97,7 @@ html, body {
 }
 
 .prefooter img{
-  max-width: 50vw;
+  max-width: 20vw;
 }
 .prefooter{
   display: flex;
@@ -99,6 +109,7 @@ html, body {
   font-size: 0.8em;
   font-style: italic;
 }
+
 .corner {
     z-index: 100000000000000000000000;
     width: 10.5%;
@@ -279,6 +290,21 @@ table:hover{
     border-radius: 100%;
 }
 
+.coverimagealt {
+    object-fit: contain;
+    max-height: 20%;
+    max-width: 20%;
+    z-index: 105;
+    border-radius: 100%;
+}
+
+.italic{
+font-style: italic;
+}
+.minitext{
+  font-size: 0.8rem;
+  color: rgb(207, 207, 207);
+}
 img {
     max-width: 90%;
     max-height: 80%;
@@ -848,6 +874,17 @@ color: #1d1717;
   color: #999;
 }
 
+.publication-item .type {
+  color: #999;
+font-style: italic;
+}
+
+.meta {
+  display: flex;
+  gap: 8px;          /* space between year and type */
+  align-items: center;
+}
+
  .pub-tag {
   color: var(--feature-color);
   border: var(--feature-color3)2px solid;
@@ -1039,6 +1076,10 @@ color: #1d1717;
   .offsetflex{
     flex-direction: column;
   }
+
+  .section{
+    min-height: none !important;
+  }
   .education{
     max-width: none;
   }
@@ -1056,6 +1097,11 @@ color: #1d1717;
     width: 0 !important;
     height: 0 !important;
   }
+
+.introdiv{
+  height: fit-content !important;
+}
+
   .footer{
   padding: 10vw;
   text-align: center;
@@ -1446,12 +1492,6 @@ ul{
 .text{
   background-color: inherit;
  
-}
-
-.section{
-  margin-top: 1em;
-    min-height: 80vh;
-    min-width: 50vw;
 }
 
 

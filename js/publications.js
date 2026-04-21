@@ -21,7 +21,8 @@ $(document).ready(function() {
 
                         
                                   ${pub.tags ? `<div class="pub-tag">${pub.tags}</div>` : ''}
-                        <div class="authors">${pub.authors.join(', ')}</div>
+
+                     
 
                         ${pub.abstract ? `
                             <button class="toggle-abstract" data-index="${index}">Show Abstract</button>
@@ -33,8 +34,10 @@ $(document).ready(function() {
                         ${pub.journal ? `<div class="journal"><em>${pub.journal}</em></div>` : ''}
                         ${pub.conference ? `<div class="conference"><em>${pub.conference}</em></div>` : ''}
                           ${pub.workshop ? `<div class="conference"><em>${pub.workshop}</em></div>` : ''}
-                        ${pub.year ? `<div class="year">${pub.year}</div>` : ''}
-                    
+                      <div class="meta">
+  ${pub.year ? `<div class="year">${pub.year}</div>` : ''}
+  ${pub.type ? `<div class="type">${pub.type}</div>` : ''}
+</div>
                     </div>
                 `;
 
